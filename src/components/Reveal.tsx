@@ -24,7 +24,7 @@ export function Reveal({ children, className = "", delay = 0 }: RevealProps) {
 
     const mobile = window.matchMedia("(max-width: 640px)").matches;
     if (mobile) {
-      node.style.setProperty("--reveal-duration", "0.45s");
+      node.style.setProperty("--reveal-duration", "0.6s");
     }
 
     if (delay) {
@@ -38,7 +38,8 @@ export function Reveal({ children, className = "", delay = 0 }: RevealProps) {
           observer.unobserve(node);
         }
       },
-      { threshold: 0.14, rootMargin: "0px 0px -6% 0px" },
+      /* Wcześnie przy wejściu w viewport — też przy wysokich sekcjach */
+      { threshold: 0.06, rootMargin: "0px 0px -8% 0px" },
     );
 
     observer.observe(node);

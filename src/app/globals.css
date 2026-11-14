@@ -1021,76 +1021,11 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
   }
 }
 
-/* —— Home: sekcje poniżej hero — ciche „mignięcie” przy wejściu —— */
-.home-below--anim:not(.is-ready) > .dabrow,
-.home-below--anim:not(.is-ready) > .news,
-.home-below--anim:not(.is-ready) > .projekty,
-.home-below--anim:not(.is-ready) > .darowizny,
-.home-below--anim:not(.is-ready) > .site-footer {
-  opacity: 0;
-  transform: translateY(0.55rem);
-}
-
-.home-below--anim.is-ready > .dabrow,
-.home-below--anim.is-ready > .news,
-.home-below--anim.is-ready > .projekty,
-.home-below--anim.is-ready > .darowizny,
-.home-below--anim.is-ready > .site-footer {
-  animation: home-section-in 0.85s cubic-bezier(0.16, 1, 0.3, 1) both;
-}
-
-.home-below--anim.is-ready > .dabrow {
-  animation-delay: 3.55s;
-}
-
-.home-below--anim.is-ready > .news {
-  animation-delay: 3.75s;
-}
-
-.home-below--anim.is-ready > .projekty {
-  animation-delay: 3.95s;
-}
-
-.home-below--anim.is-ready > .darowizny {
-  animation-delay: 4.1s;
-}
-
-.home-below--anim.is-ready > .site-footer {
-  animation-delay: 4.25s;
-}
-
-/* Po oknie animacji — treść zawsze widoczna (late Suspense itd.) */
-.home-below--anim.is-settled > .dabrow,
-.home-below--anim.is-settled > .news,
-.home-below--anim.is-settled > .projekty,
-.home-below--anim.is-settled > .darowizny,
-.home-below--anim.is-settled > .site-footer {
-  animation: none;
-  opacity: 1;
-  transform: none;
-}
-
-@keyframes home-section-in {
-  from {
-    opacity: 0;
-    transform: translateY(0.45rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   .manifest__bg-img,
   .manifest__bg-wash,
   .manifest__reveal,
-  .site-menu,
-  .home-below--anim > .dabrow,
-  .home-below--anim > .news,
-  .home-below--anim > .projekty,
-  .home-below--anim > .darowizny,
-  .home-below--anim > .site-footer {
+  .site-menu {
     animation: none !important;
     opacity: revert-layer;
     transform: none !important;
@@ -1103,14 +1038,6 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
 
   .site-menu {
     transform: translateY(0) !important;
-  }
-
-  .home-below--anim > .dabrow,
-  .home-below--anim > .news,
-  .home-below--anim > .projekty,
-  .home-below--anim > .darowizny,
-  .home-below--anim > .site-footer {
-    opacity: 1 !important;
   }
 }
 
@@ -1133,21 +1060,10 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
   box-sizing: border-box;
 }
 
-/* miękki lokalny podkład pod napisami — bez karty, tylko czytelność */
+/* Podkład pod napisami tylko na mobile — na desktopie bez „kwadratu” */
 .manifest__grid::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: -1.5rem -1.25rem -2rem;
-  background: radial-gradient(
-    115% 95% at 50% 42%,
-    rgba(250, 250, 247, 0.9) 0%,
-    rgba(250, 250, 247, 0.78) 38%,
-    rgba(250, 250, 247, 0.42) 68%,
-    rgba(250, 250, 247, 0.12) 86%,
-    transparent 100%
-  );
-  pointer-events: none;
+  content: none;
+  display: none;
 }
 
 .manifest__eyebrow {
@@ -1277,6 +1193,10 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
   }
 
   .manifest__grid::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
     inset: -0.85rem -0.65rem -1.85rem -1rem;
     background: radial-gradient(
       135% 105% at 18% 38%,
@@ -1286,6 +1206,7 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
       rgba(250, 250, 247, 0.14) 86%,
       transparent 100%
     );
+    pointer-events: none;
   }
 
   .manifest__eyebrow {
@@ -2383,11 +2304,11 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
 /* —— Scroll reveal —— */
 .reveal {
   opacity: 0;
-  transform: translateY(0.7rem);
+  transform: translateY(1.1rem);
   transition:
-    opacity var(--reveal-duration, 0.55s) cubic-bezier(0.16, 1, 0.3, 1)
+    opacity var(--reveal-duration, 0.85s) cubic-bezier(0.16, 1, 0.3, 1)
       var(--reveal-delay, 0ms),
-    transform var(--reveal-duration, 0.55s) cubic-bezier(0.16, 1, 0.3, 1)
+    transform var(--reveal-duration, 0.85s) cubic-bezier(0.16, 1, 0.3, 1)
       var(--reveal-delay, 0ms);
   will-change: opacity, transform;
 }
