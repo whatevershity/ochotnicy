@@ -2303,6 +2303,7 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
 
 /* —— Scroll reveal —— */
 .reveal {
+  width: 100%;
   opacity: 0;
   transform: translateY(1.1rem);
   transition:

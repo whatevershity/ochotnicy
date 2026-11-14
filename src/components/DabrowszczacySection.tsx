@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Reveal } from "@/components/Reveal";
 
 const LEAD =
   "W centrum naszego zainteresowania znajdują się Dąbrowszczacy – antyfaszystki i antyfaszyści z Polski, którzy jako ochotniczki i ochotnicy wzięli udział w hiszpańskiej wojnie domowej (1936-1939) walcząc z faszyzmem w obronie Republiki Hiszpańskiej.";
@@ -51,60 +52,64 @@ export function DabrowszczacySection() {
     >
       {/* —— Desktop „O nas” —— */}
       <div className="dabrow__inner dabrow__inner--desktop">
-        <div className="dabrow__intro">
-          <header className="home-head">
-            <div className="home-head__bar">
-              <h2 id="dabrowszczacy-heading" className="home-head__title">
-                Ochotnicy Wolności
-              </h2>
-            </div>
-          </header>
-
-          <div className="dabrow__prose">
-            <div className="dabrow__lead-block">
-              <p className="dabrow__label">o nas</p>
-              <p className="dabrow__lead">{LEAD}</p>
-            </div>
-
-            <div className="dabrow__aside-wrap">
-              <div className="dabrow__obrys" aria-hidden="true">
-                <Image
-                  src="/brand/historia/obrys.png"
-                  alt=""
-                  width={420}
-                  height={900}
-                  className="dabrow__obrys-img"
-                  unoptimized
-                />
+        <Reveal>
+          <div className="dabrow__intro">
+            <header className="home-head">
+              <div className="home-head__bar">
+                <h2 id="dabrowszczacy-heading" className="home-head__title">
+                  Ochotnicy Wolności
+                </h2>
               </div>
-              <div className="dabrow__aside">
-                {ASIDE.map((paragraph) => (
-                  <p key={paragraph.slice(0, 32)}>{paragraph}</p>
-                ))}
+            </header>
+
+            <div className="dabrow__prose">
+              <div className="dabrow__lead-block">
+                <p className="dabrow__label">o nas</p>
+                <p className="dabrow__lead">{LEAD}</p>
+              </div>
+
+              <div className="dabrow__aside-wrap">
+                <div className="dabrow__obrys" aria-hidden="true">
+                  <Image
+                    src="/brand/historia/obrys.png"
+                    alt=""
+                    width={420}
+                    height={900}
+                    className="dabrow__obrys-img"
+                    unoptimized
+                  />
+                </div>
+                <div className="dabrow__aside">
+                  {ASIDE.map((paragraph) => (
+                    <p key={paragraph.slice(0, 32)}>{paragraph}</p>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </Reveal>
 
-        <figure className="dabrow__photo">
-          <div className="dabrow__photo-frame">
-            <Image
-              src="/brand/onas.jpg"
-              alt="Odsłonięcie muralu — flaga republikańska i race na dachu"
-              width={1600}
-              height={1200}
-              className="dabrow__photo-img"
-              sizes="(max-width: 900px) 94vw, 1100px"
-              priority={false}
-            />
-          </div>
-          <figcaption className="dabrow__photo-cap">
-            Odsłonięcie muralu, Warszawa 2025.
-          </figcaption>
-        </figure>
+        <Reveal delay={90}>
+          <figure className="dabrow__photo">
+            <div className="dabrow__photo-frame">
+              <Image
+                src="/brand/onas.jpg"
+                alt="Odsłonięcie muralu — flaga republikańska i race na dachu"
+                width={1600}
+                height={1200}
+                className="dabrow__photo-img"
+                sizes="(max-width: 900px) 94vw, 1100px"
+                priority={false}
+              />
+            </div>
+            <figcaption className="dabrow__photo-cap">
+              Odsłonięcie muralu, Warszawa 2025.
+            </figcaption>
+          </figure>
+        </Reveal>
       </div>
 
-      {/* —— Mobile „O nas”: prawdziwy tekst, obrys jako tło —— */}
+      {/* —— Mobile „O nas”: tło zawsze, tekst wjeżdża —— */}
       <div className="dabrow-m" aria-labelledby="dabrowszczacy-heading-m">
         <div className="dabrow-m__bg" aria-hidden="true">
           <div className="dabrow-m__obrys-wrap">
@@ -118,98 +123,104 @@ export function DabrowszczacySection() {
             />
           </div>
         </div>
-        <div className="dabrow-m__copy">
-          <p className="dabrow-m__eyebrow">O nas</p>
-          <h2 id="dabrowszczacy-heading-m" className="dabrow-m__title">
-            Ochotnicy <span>Wolności</span>
-          </h2>
-          <p className="dabrow-m__lead">
-            W centrum naszej działalności znajdują się Dąbrowszczacy – polskie
-            ochotniczki i ochotnicy, którzy walczyli z faszyzmem w obronie
-            Republiki Hiszpańskiej podczas wojny domowej w latach 1936–1939.
-          </p>
-          <p className="dabrow-m__lead">
-            Działamy od 2015 roku, kiedy powstała inicjatywa „Łapy precz od ul.
-            Dąbrowszczaków”, sprzeciwiająca się zmianie nazwy ulicy w ramach tzw.
-            dekomunizacji. Organizowaliśmy protesty, debaty, pokazy filmowe i
-            wydarzenia rocznicowe, angażując się w przywracanie pamięci o
-            Dąbrowszczakach także we współpracy z organizacjami zagranicznymi.
-          </p>
-          <p className="dabrow-m__lead dabrow-m__lead--last">
-            Pamięć o Dąbrowszczakach, ich odwadze i zaangażowaniu, wyrażonym w
-            haśle „za wolność waszą i naszą”, pozostaje dla nas ważna i zasługuje
-            na pielęgnowanie.
-          </p>
-          <Link href="/#projekty" className="ow-btn ow-btn--sweep">
-            <span className="ow-btn__label">NASZE PROJEKTY</span>
-          </Link>
-        </div>
+        <Reveal>
+          <div className="dabrow-m__copy">
+            <p className="dabrow-m__eyebrow">O nas</p>
+            <h2 id="dabrowszczacy-heading-m" className="dabrow-m__title">
+              Ochotnicy <span>Wolności</span>
+            </h2>
+            <p className="dabrow-m__lead">
+              W centrum naszej działalności znajdują się Dąbrowszczacy – polskie
+              ochotniczki i ochotnicy, którzy walczyli z faszyzmem w obronie
+              Republiki Hiszpańskiej podczas wojny domowej w latach 1936–1939.
+            </p>
+            <p className="dabrow-m__lead">
+              Działamy od 2015 roku, kiedy powstała inicjatywa „Łapy precz od ul.
+              Dąbrowszczaków”, sprzeciwiająca się zmianie nazwy ulicy w ramach tzw.
+              dekomunizacji. Organizowaliśmy protesty, debaty, pokazy filmowe i
+              wydarzenia rocznicowe, angażując się w przywracanie pamięci o
+              Dąbrowszczakach także we współpracy z organizacjami zagranicznymi.
+            </p>
+            <p className="dabrow-m__lead dabrow-m__lead--last">
+              Pamięć o Dąbrowszczakach, ich odwadze i zaangażowaniu, wyrażonym w
+              haśle „za wolność waszą i naszą”, pozostaje dla nas ważna i zasługuje
+              na pielęgnowanie.
+            </p>
+            <Link href="/#projekty" className="ow-btn ow-btn--sweep">
+              <span className="ow-btn__label">NASZE PROJEKTY</span>
+            </Link>
+          </div>
+        </Reveal>
       </div>
 
       <div id="historia">
-        {/* —— Historia desktop —— */}
+        {/* —— Historia desktop: tło zawsze, karta wjeżdża —— */}
         <div className="historia historia--desktop">
           <div className="historia__bg" aria-hidden="true">
             <div className="historia__bg-shade" />
           </div>
 
-          <div className="historia__inner">
-            <div className="historia__card">
-              <header className="home-head home-head--on-dark">
-                <div className="home-head__bar">
-                  <h2 id="historia-heading" className="home-head__title">
-                    Kim byli Dąbrowszczacy?
-                  </h2>
-                </div>
-              </header>
+          <Reveal>
+            <div className="historia__inner">
+              <div className="historia__card">
+                <header className="home-head home-head--on-dark">
+                  <div className="home-head__bar">
+                    <h2 id="historia-heading" className="home-head__title">
+                      Kim byli Dąbrowszczacy?
+                    </h2>
+                  </div>
+                </header>
 
-              <div className="historia__stage">
-                <ul className="historia__photos">
-                  {HISTORIA_PHOTOS.map((photo) => (
-                    <li key={photo.src} className="historia__photo">
-                      <Image
-                        src={photo.src}
-                        alt={photo.alt}
-                        fill
-                        className="historia__photo-img"
-                        sizes="14rem"
-                      />
-                    </li>
-                  ))}
-                </ul>
+                <div className="historia__stage">
+                  <ul className="historia__photos">
+                    {HISTORIA_PHOTOS.map((photo) => (
+                      <li key={photo.src} className="historia__photo">
+                        <Image
+                          src={photo.src}
+                          alt={photo.alt}
+                          fill
+                          className="historia__photo-img"
+                          sizes="14rem"
+                        />
+                      </li>
+                    ))}
+                  </ul>
 
-                <div className="historia__copy">
-                  <div className="historia__copy-inner">
-                    <div className="historia__lead-block">
-                      <p className="historia__label">HISTORIA</p>
-                      <h3 className="historia__lead">{HISTORIA_LEAD}</h3>
-                    </div>
-                    <div className="historia__body">
-                      {HISTORIA_BODY.map((paragraph) => (
-                        <p key={paragraph.slice(0, 40)}>{paragraph}</p>
-                      ))}
+                  <div className="historia__copy">
+                    <div className="historia__copy-inner">
+                      <div className="historia__lead-block">
+                        <p className="historia__label">HISTORIA</p>
+                        <h3 className="historia__lead">{HISTORIA_LEAD}</h3>
+                      </div>
+                      <div className="historia__body">
+                        {HISTORIA_BODY.map((paragraph) => (
+                          <p key={paragraph.slice(0, 40)}>{paragraph}</p>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
 
-        {/* —— Historia mobile: cała czerwona sekcja, jasny tekst —— */}
+        {/* —— Historia mobile: czerwone tło zawsze, treść wjeżdża —— */}
         <div className="historia-m" aria-labelledby="historia-heading-m">
-          <p className="historia-m__eyebrow">Historia</p>
-          <h2 id="historia-heading-m" className="historia-m__title">
-            Kim byli Dąbrowszczacy?
-          </h2>
-          <p className="historia-m__text">{HISTORIA_LEAD}</p>
-          <p className="historia-m__text">{HISTORIA_BODY[0]}</p>
-          <Link
-            href="/aktualnosci#artykuly"
-            className="ow-btn ow-btn--sweep historia-m__btn"
-          >
-            <span className="ow-btn__label">DOWIEDZ SIĘ WIĘCEJ</span>
-          </Link>
+          <Reveal>
+            <p className="historia-m__eyebrow">Historia</p>
+            <h2 id="historia-heading-m" className="historia-m__title">
+              Kim byli Dąbrowszczacy?
+            </h2>
+            <p className="historia-m__text">{HISTORIA_LEAD}</p>
+            <p className="historia-m__text">{HISTORIA_BODY[0]}</p>
+            <Link
+              href="/aktualnosci#artykuly"
+              className="ow-btn ow-btn--sweep historia-m__btn"
+            >
+              <span className="ow-btn__label">DOWIEDZ SIĘ WIĘCEJ</span>
+            </Link>
+          </Reveal>
         </div>
       </div>
     </section>

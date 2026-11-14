@@ -12,9 +12,7 @@ export default function Home() {
     <main className="relative flex w-full max-w-[100vw] flex-1 flex-col overflow-x-clip bg-[#fafaf7]">
       {/* Hero v1 ukryty — plik zostaje w src/components/Hero.tsx */}
       <ManifestSection />
-      <Reveal>
-        <DabrowszczacySection />
-      </Reveal>
+      <DabrowszczacySection />
       <Reveal delay={60}>
         <Suspense
           fallback={
