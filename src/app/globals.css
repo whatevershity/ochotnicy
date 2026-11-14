@@ -1176,7 +1176,8 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
     height: auto;
     min-height: 100svh;
     place-items: center stretch;
-    padding-block: clamp(4.25rem, 11vw, 5.5rem) clamp(2.75rem, 8vw, 4rem);
+    /* więcej od góry pod menu + logo */
+    padding-block: clamp(5.25rem, 14vw, 6.5rem) clamp(2.75rem, 8vw, 4rem);
   }
 
   .manifest__grid {
@@ -1189,8 +1190,8 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
     width: 100%;
     gap: 0;
     padding-inline: var(--ow-page-x);
-    /* całość hero trochę wyżej */
-    transform: translateY(-28px);
+    /* mniej w górę — logo nie wychodzi spod menu */
+    transform: translateY(-10px);
   }
 
   .manifest__grid::before {
@@ -1219,9 +1220,9 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
     width: auto;
     max-width: 100%;
     min-height: 0;
-    /* miejsce na logo wyżej + ujemny margin, żeby tytuł nie pojechał */
-    padding-top: 2.75rem;
-    margin: -2.75rem 0 0;
+    /* logo niżej — nie wystaje od góry pod menu */
+    padding-top: 3.25rem;
+    margin: 0;
     overflow: visible;
     clip-path: none !important;
   }
@@ -1236,11 +1237,10 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
     position: relative;
     left: auto;
     top: auto;
-    /* w górę w zarezerwowany padding — bez ucięcia i bez ruszania tytułu */
-    transform: translateY(-2.75rem);
-    width: clamp(6.75rem, 28vw, 8.25rem);
-    height: clamp(6.75rem, 28vw, 8.25rem);
-    margin: 0 0 3.25rem;
+    transform: translateY(-0.85rem);
+    width: clamp(5.75rem, 24vw, 7.25rem);
+    height: clamp(5.75rem, 24vw, 7.25rem);
+    margin: 0 0 2.35rem;
     opacity: 0.95;
   }
 
@@ -3332,8 +3332,8 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
   .news__mobile .home-head__title {
     font-size: clamp(2rem, 8.5vw, 2.65rem);
     font-weight: 700;
-    line-height: 1.05;
-    letter-spacing: 0.015em;
+    line-height: 1.02;
+    letter-spacing: 0.02em;
   }
 
   .news__more {
@@ -3453,8 +3453,8 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
   .darowizny__head--mobile .home-head__title {
     font-size: clamp(2rem, 8.5vw, 2.65rem);
     font-weight: 700;
-    line-height: 1.05;
-    letter-spacing: 0.015em;
+    line-height: 1.02;
+    letter-spacing: 0.02em;
     text-align: center;
   }
 }
