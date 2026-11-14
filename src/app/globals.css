@@ -1257,11 +1257,11 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
   .manifest__title {
     justify-self: start;
     margin: 0;
-    /* pełna szerokość minus padding — maksymalny czytelny rozmiar „STOWARZYSZENIE” */
-    font-size: clamp(2.4rem, calc((100vw - 2.4rem) / 8), 3.15rem);
+    /* trochę mniejsze — „STOWARZYSZENIE” / „OCHOTNICY” nie wychodzą poza krawędź */
+    font-size: clamp(1.85rem, calc((100vw - 2.4rem) / 9.4), 2.55rem);
     font-weight: 700;
-    letter-spacing: 0;
-    line-height: 1.05;
+    letter-spacing: -0.01em;
+    line-height: 1.06;
     text-align: left;
     max-width: 100%;
   }
@@ -1351,8 +1351,8 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
   }
 
   .home-head__title {
-    font-size: clamp(1.85rem, 8vw, 2.35rem);
-    letter-spacing: 0.04em;
+    font-size: clamp(1.45rem, 6.2vw, 1.95rem);
+    letter-spacing: 0.03em;
   }
 }
 
@@ -1892,10 +1892,10 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
   .dabrow-m__title {
     margin: 0 0 1.65rem;
     font-family: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
-    font-size: clamp(2.55rem, 11vw, 3.25rem);
+    font-size: clamp(2rem, 8.5vw, 2.65rem);
     font-weight: 700;
-    line-height: 1.02;
-    letter-spacing: 0.02em;
+    line-height: 1.05;
+    letter-spacing: 0.015em;
     text-transform: uppercase;
     color: var(--ow-heading);
   }
@@ -1940,10 +1940,10 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
   .historia-m__title {
     margin: 0 0 1.65rem;
     font-family: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
-    font-size: clamp(2.35rem, 10vw, 3rem);
+    font-size: clamp(1.85rem, 8vw, 2.45rem);
     font-weight: 700;
-    line-height: 1.05;
-    letter-spacing: 0.02em;
+    line-height: 1.08;
+    letter-spacing: 0.015em;
     text-transform: uppercase;
     color: #fff;
     text-align: left;
@@ -2011,10 +2011,10 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
   }
 
   .projekty-m .home-head__title {
-    font-size: clamp(2.55rem, 11vw, 3.25rem);
+    font-size: clamp(2rem, 8.5vw, 2.65rem);
     font-weight: 700;
-    line-height: 1.02;
-    letter-spacing: 0.02em;
+    line-height: 1.05;
+    letter-spacing: 0.015em;
     color: var(--ow-heading);
     text-align: left;
   }
@@ -3330,10 +3330,10 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
   }
 
   .news__mobile .home-head__title {
-    font-size: clamp(2.55rem, 11vw, 3.25rem);
+    font-size: clamp(2rem, 8.5vw, 2.65rem);
     font-weight: 700;
-    line-height: 1.02;
-    letter-spacing: 0.02em;
+    line-height: 1.05;
+    letter-spacing: 0.015em;
   }
 
   .news__more {
@@ -3451,10 +3451,10 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
   }
 
   .darowizny__head--mobile .home-head__title {
-    font-size: clamp(2.55rem, 11vw, 3.25rem);
+    font-size: clamp(2rem, 8.5vw, 2.65rem);
     font-weight: 700;
-    line-height: 1.02;
-    letter-spacing: 0.02em;
+    line-height: 1.05;
+    letter-spacing: 0.015em;
     text-align: center;
   }
 }
