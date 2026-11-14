@@ -586,16 +586,11 @@ body:has(.manifest) .site-menu {
     transition: background 0.12s ease;
   }
 
-  .site-menu__panel-link--normal {
-    letter-spacing: 0.04em;
-  }
-
-  .site-menu__panel-link--wide {
-    letter-spacing: 0.22em;
-  }
-
+  /* Mobile: bez rozciągania liter — zwykły tracking */
+  .site-menu__panel-link--normal,
+  .site-menu__panel-link--wide,
   .site-menu__panel-link--wider {
-    letter-spacing: 0.42em;
+    letter-spacing: 0.04em;
   }
 
   .site-menu__panel-link:hover,
