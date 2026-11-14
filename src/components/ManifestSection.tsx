@@ -49,7 +49,7 @@ export function ManifestSection() {
       <section
         aria-labelledby="manifest-heading"
         className={[
-          "manifest relative grid h-[100svh] w-full max-w-[100vw] bg-transparent",
+          "manifest relative grid h-[100svh] w-full max-w-full bg-transparent",
           animClass,
         ]
           .filter(Boolean)

@@ -9,7 +9,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 
 export default function Home() {
   return (
-    <main className="relative flex w-full max-w-[100vw] flex-1 flex-col overflow-x-clip bg-[#fafaf7]">
+    <main className="relative flex w-full max-w-full flex-1 flex-col bg-[#fafaf7]">
       {/* Hero v1 ukryty — plik zostaje w src/components/Hero.tsx */}
       <ManifestSection />
       <DabrowszczacySection />

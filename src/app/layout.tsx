@@ -49,9 +49,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="pl"
-      className={`${montserrat.variable} ${caveat.variable} ${baskerville.variable} ${cormorant.variable} h-full antialiased`}
+      className={`${montserrat.variable} ${caveat.variable} ${baskerville.variable} ${cormorant.variable} antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-white font-sans text-[var(--ow-text)]">
+      <body className="flex min-h-dvh flex-col bg-white font-sans text-[var(--ow-text)]">
         <SiteMenu />
         {children}
       </body>
