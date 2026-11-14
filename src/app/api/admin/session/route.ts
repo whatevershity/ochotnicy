@@ -2,11 +2,24 @@ import { requireIdentity } from "../../../../../cursor/identity";
 import {
   checkAdminPassword,
   clearAdminCookie,
+  isAdminOpenAccess,
   makeAdminCookie,
   rateLimit,
 } from "@/lib/admin-auth";
 
 export async function POST(request: Request) {
+  if (isAdminOpenAccess()) {
+    return Response.json(
+      { ok: true },
+      {
+        headers: {
+          "set-cookie": makeAdminCookie("open"),
+          "cache-control": "private, no-store",
+        },
+      },
+    );
+  }
+
   const identity = await requireIdentity(request);
   if (identity instanceof Response) return identity;
   if (identity.kind !== "person") {
@@ -44,8 +57,10 @@ export async function POST(request: Request) {
 }
 
 export async function DELETE(request: Request) {
-  const identity = await requireIdentity(request);
-  if (identity instanceof Response) return identity;
+  if (!isAdminOpenAccess()) {
+    const identity = await requireIdentity(request);
+    if (identity instanceof Response) return identity;
+  }
   return new Response(null, {
     status: 204,
     headers: { "set-cookie": clearAdminCookie() },

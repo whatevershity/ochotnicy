@@ -6,6 +6,7 @@ import {
   adminPasswordConfigured,
   adminWritesAllowed,
   isAdminCookieHeader,
+  isAdminOpenAccess,
   isHostedApp,
 } from "@/lib/admin-auth";
 
@@ -18,22 +19,36 @@ export const instant = false;
 
 export default async function AdminPage() {
   await connection();
-  const h = await headers();
-  const viewer = await getIdentity(h);
+  const open = isAdminOpenAccess();
 
-  if (!viewer.verified || viewer.kind !== "person") {
-    return (
-      <main className="admin-page">
-        <div className="admin-page__inner">
-          <p className="admin-page__lead">
-            Ta strona jest tylko dla osób zalogowanych do aplikacji.
-          </p>
-        </div>
-      </main>
-    );
-  }
+  if (!open) {
+    const h = await headers();
+    const viewer = await getIdentity(h);
 
-  if (!adminWritesAllowed()) {
+    if (!viewer.verified || viewer.kind !== "person") {
+      return (
+        <main className="admin-page">
+          <div className="admin-page__inner">
+            <p className="admin-page__lead">
+              Ta strona jest tylko dla osób zalogowanych do aplikacji.
+            </p>
+          </div>
+        </main>
+      );
+    }
+
+    if (!adminWritesAllowed()) {
+      return (
+        <main className="admin-page">
+          <div className="admin-page__inner">
+            <p className="admin-page__lead">
+              Panel jest wyłączony: brak skonfigurowanego hasła administratora.
+            </p>
+          </div>
+        </main>
+      );
+    }
+  } else if (!adminWritesAllowed()) {
     return (
       <main className="admin-page">
         <div className="admin-page__inner">
@@ -45,14 +60,21 @@ export default async function AdminPage() {
     );
   }
 
-  const jar = await cookies();
-  const cookieHeader = jar
-    .getAll()
-    .map((c) => `${c.name}=${encodeURIComponent(c.value)}`)
-    .join("; ");
-  const needsPassword =
-    (adminPasswordConfigured() || isHostedApp()) &&
-    !isAdminCookieHeader(cookieHeader || null, viewer.sub);
+  let needsPassword = false;
+  if (!open) {
+    const h = await headers();
+    const viewer = await getIdentity(h);
+    const jar = await cookies();
+    const cookieHeader = jar
+      .getAll()
+      .map((c) => `${c.name}=${encodeURIComponent(c.value)}`)
+      .join("; ");
+    const sub =
+      viewer.verified && viewer.kind === "person" ? viewer.sub : undefined;
+    needsPassword =
+      (adminPasswordConfigured() || isHostedApp()) &&
+      !isAdminCookieHeader(cookieHeader || null, sub);
+  }
 
   return (
     <main className="admin-page">

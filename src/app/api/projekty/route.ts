@@ -1,6 +1,10 @@
 import { randomUUID } from "node:crypto";
 import { requireIdentity } from "../../../../cursor/identity";
-import { isAdminRequest, rateLimit } from "@/lib/admin-auth";
+import {
+  isAdminOpenAccess,
+  isAdminRequest,
+  rateLimit,
+} from "@/lib/admin-auth";
 import { slugifyTitle } from "@/lib/aktualnosci";
 import { sql } from "@/lib/db";
 
@@ -38,24 +42,33 @@ function sniffImageMime(buf: Buffer): string | null {
 }
 
 export async function POST(request: Request) {
-  const identity = await requireIdentity(request);
-  if (identity instanceof Response) return identity;
-  if (identity.kind !== "person") {
-    return Response.json({ error: "Niedozwolone." }, { status: 403 });
+  const open = isAdminOpenAccess();
+  let actorSub = "open";
+
+  if (!open) {
+    const identity = await requireIdentity(request);
+    if (identity instanceof Response) return identity;
+    if (identity.kind !== "person") {
+      return Response.json({ error: "Niedozwolone." }, { status: 403 });
+    }
+    if (identity.stage === "preview") {
+      return Response.json(
+        { error: "Zapis z podglądu jest wyłączony." },
+        { status: 403 },
+      );
+    }
+    if (!isAdminRequest(request, identity.sub)) {
+      return Response.json(
+        { error: "Wymagane hasło administratora." },
+        { status: 401 },
+      );
+    }
+    actorSub = identity.sub;
   }
-  if (identity.stage === "preview") {
-    return Response.json(
-      { error: "Zapis z podglądu jest wyłączony." },
-      { status: 403 },
-    );
-  }
-  if (!isAdminRequest(request, identity.sub)) {
-    return Response.json(
-      { error: "Wymagane hasło administratora." },
-      { status: 401 },
-    );
-  }
-  if (!rateLimit(`projekt:${identity.sub}`, 20, 60 * 60 * 1000)) {
+
+  const ip =
+    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+  if (!rateLimit(`projekt:${actorSub}:${ip}`, 20, 60 * 60 * 1000)) {
     return Response.json(
       { error: "Za dużo wpisów na godzinę. Spróbuj później." },
       { status: 429 },

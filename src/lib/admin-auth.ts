@@ -3,18 +3,23 @@ import { createHmac, timingSafeEqual } from "node:crypto";
 const COOKIE = "ow_admin";
 const MAX_AGE_SEC = 60 * 60 * 24 * 14; // 14 dni
 
-/** Tymczasowo na czas pracy — ustaw `false`, żeby znów wymagać hasła. */
+/** Tymczasowo: otwarty panel bez logowania / hasła. Ustaw `false`, żeby znów zamknąć. */
 const TEMP_SKIP_ADMIN_PASSWORD = true;
 
 function secret(): string {
   return process.env.ADMIN_PASSWORD?.trim() ?? "";
 }
 
-/** Hostowana aplikacja Cursor / Vercel — nigdy nie otwieramy admina „na styk”. */
+/** Hostowana aplikacja Cursor / Vercel. */
 export function isHostedApp(): boolean {
   return Boolean(
     process.env.CURSOR_APP_ID?.trim() || process.env.VERCEL?.trim(),
   );
+}
+
+/** Na razie każdy może wejść na /admin i dodawać wpisy (bez Cursor login). */
+export function isAdminOpenAccess(): boolean {
+  return TEMP_SKIP_ADMIN_PASSWORD;
 }
 
 function sign(value: string): string {
