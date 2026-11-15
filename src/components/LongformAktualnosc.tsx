@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter } from "@/components/SiteFooter";
 import {
+  bodyWithoutLead,
   captionForPost,
   compactLead,
   extractLeadingImageCaption,
@@ -9,6 +10,7 @@ import {
   isArtykulyKind,
   labelForKind,
   readingTimeMinutes,
+  resolvePostLead,
   type Aktualnosc,
 } from "@/lib/aktualnosci";
 import { parseLongformSections } from "@/lib/longform-markdown";
@@ -17,27 +19,12 @@ type Props = { post: Aktualnosc };
 
 export function LongformAktualnosc({ post }: Props) {
   const category = labelForKind(post.kind);
-  const rawLead =
-    post.excerpt.replace(/\s+/g, " ").trim() ||
-    post.body.replace(/\r\n/g, "\n").trim().split(/\n{2,}/)[0] ||
-    "";
-  const lead = compactLead(rawLead);
+  const lead = compactLead(resolvePostLead(post.excerpt, post.body));
 
   const pulled = post.caption
     ? { caption: post.caption, body: post.body.trim() }
     : extractLeadingImageCaption(post.body);
-  let bodyWork = pulled.body;
-
-  const bodyParts = bodyWork.replace(/\r\n/g, "\n").trim().split(/\n{2,}/);
-  const first = bodyParts[0]?.replace(/\n/g, " ").trim() ?? "";
-  const leadNorm = lead.replace(/\s+/g, " ").trim();
-  if (
-    first &&
-    (first === leadNorm ||
-      first.startsWith(leadNorm.slice(0, Math.min(80, leadNorm.length))))
-  ) {
-    bodyWork = bodyParts.slice(1).join("\n\n").trim();
-  }
+  const bodyWork = bodyWithoutLead(pulled.body, lead);
 
   const minutes = readingTimeMinutes(`${lead}\n${post.body}`);
   const archiveHash = isArtykulyKind(post.kind) ? "#artykuly" : "#aktualnosci";

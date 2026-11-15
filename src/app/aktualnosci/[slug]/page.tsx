@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { LongformAktualnosc } from "@/components/LongformAktualnosc";
 import { SiteFooter } from "@/components/SiteFooter";
 import {
+  bodyWithoutLead,
   captionForPost,
   compactLead,
   formatAktualnoscDate,
@@ -13,6 +14,7 @@ import {
   isArtykulyKind,
   labelForKind,
   readingTimeMinutes,
+  resolvePostLead,
 } from "@/lib/aktualnosci";
 import { isLongformAktualnosc } from "@/lib/longform-posts";
 import { renderSimpleMarkdown } from "@/lib/simple-markdown";
@@ -37,31 +39,6 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-function firstParagraph(body: string): string {
-  return (
-    body
-      .replace(/\r\n/g, "\n")
-      .trim()
-      .split(/\n{2,}/)[0]
-      ?.replace(/\n/g, " ")
-      .trim() ?? ""
-  );
-}
-
-function bodyWithoutLead(body: string, lead: string): string {
-  const parts = body.replace(/\r\n/g, "\n").trim().split(/\n{2,}/);
-  if (!parts.length) return "";
-  const first = parts[0].replace(/\n/g, " ").trim();
-  const leadNorm = lead.replace(/\s+/g, " ").trim();
-  if (
-    first === leadNorm ||
-    first.startsWith(leadNorm.slice(0, Math.min(80, leadNorm.length)))
-  ) {
-    return parts.slice(1).join("\n\n").trim();
-  }
-  return body.trim();
-}
-
 export default async function AktualnoscPage({ params }: Props) {
   await connection();
   const { slug } = await params;
@@ -73,9 +50,7 @@ export default async function AktualnoscPage({ params }: Props) {
   }
 
   const category = labelForKind(post.kind);
-  const rawLead =
-    post.excerpt.replace(/\s+/g, " ").trim() || firstParagraph(post.body);
-  const lead = compactLead(rawLead);
+  const lead = compactLead(resolvePostLead(post.excerpt, post.body));
   const bodySource = bodyWithoutLead(post.body, lead);
   const minutes = readingTimeMinutes(`${lead}\n${post.body}`);
   const archiveHash = isArtykulyKind(post.kind) ? "#artykuly" : "#aktualnosci";

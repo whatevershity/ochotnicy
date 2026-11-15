@@ -78,6 +78,61 @@ export function compactLead(text: string): string {
   return `${(space > 120 ? window.slice(0, space) : window).trim()}…`;
 }
 
+/** Pierwszy akapit body (jedna linia). */
+export function firstBodyParagraph(body: string): string {
+  return (
+    body
+      .replace(/\r\n/g, "\n")
+      .trim()
+      .split(/\n{2,}/)[0]
+      ?.replace(/\n/g, " ")
+      .trim() ?? ""
+  );
+}
+
+/**
+ * Lead na stronie wpisu: pełny pierwszy akapit, gdy excerpt z listy
+ * jest tylko jego skrótem (kończy się „…” / jest prefiksem).
+ * Dzięki temu nie widać uciętego akapitu, a bodyWithoutLead nie
+ * usuwa pełnego tekstu zostawiając sam skrót.
+ */
+export function resolvePostLead(excerpt: string, body: string): string {
+  const first = firstBodyParagraph(body);
+  const ex = excerpt.replace(/\s+/g, " ").trim();
+  if (!ex) return first;
+  if (!first) return ex;
+
+  const exCore = ex.replace(/(?:\u2026|\.{2,}|…)\s*$/u, "").trim();
+  // Skrót z listy (z „…”) → pełny pierwszy akapit, żeby lead nie był ucięty.
+  if (first === ex || (exCore.length >= 40 && first.startsWith(exCore))) {
+    return first;
+  }
+  return ex;
+}
+
+/** Usuwa z body pierwszy akapit, jeśli jest tym samym co lead. */
+export function bodyWithoutLead(body: string, lead: string): string {
+  const parts = body.replace(/\r\n/g, "\n").trim().split(/\n{2,}/);
+  if (!parts.length) return "";
+  const first = parts[0].replace(/\n/g, " ").trim();
+  const leadNorm = lead.replace(/\s+/g, " ").trim();
+  if (!leadNorm) return body.trim();
+  if (first === leadNorm) {
+    return parts.slice(1).join("\n\n").trim();
+  }
+  // Prefiks tylko gdy lead nie wygląda na skrót z wielokropkiem
+  const leadCore = leadNorm.replace(/(?:\u2026|\.{2,}|…)\s*$/u, "").trim();
+  const looksTruncated = leadCore.length < leadNorm.length;
+  if (
+    !looksTruncated &&
+    leadNorm.length >= 80 &&
+    first.startsWith(leadNorm)
+  ) {
+    return parts.slice(1).join("\n\n").trim();
+  }
+  return body.trim();
+}
+
 /**
  * Link karty: pełny wpis albo zewnętrzne `source` / link z treści (listOnly).
  */
