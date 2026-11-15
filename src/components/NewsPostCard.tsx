@@ -159,18 +159,17 @@ export function NewsPostCard({
         </TitleTag>
         {excerpt ? <p className="news__excerpt">{excerpt}</p> : null}
         {external && host ? (
-          <a
-            href={href}
-            className="news__more-inline news__more-inline--external"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Dowiedz się więcej
-            <span className="news__more-arrow" aria-hidden>
-              →
-            </span>
-            <span className="news__more-host">{host}</span>
-          </a>
+          <p className="news__more-inline news__more-inline--external">
+            Dowiedz się więcej:{" "}
+            <a
+              href={href}
+              className="news__more-host"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {host}
+            </a>
+          </p>
         ) : (
           <CardLink href={href} external={false} className="news__more-inline">
             czytaj dalej

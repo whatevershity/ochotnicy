@@ -237,7 +237,7 @@ export function hrefForAktualnoscCard(
   return { href: `/aktualnosci#${post.slug}`, external: false };
 }
 
-/** Domena do CTA zewnętrznego („Dowiedz się więcej → domena”). */
+/** Domena do CTA zewnętrznego („Dowiedz się więcej: domena” — link tylko na domenę). */
 export function hostForExternalHref(href: string): string {
   try {
     return new URL(href).hostname.replace(/^www\./i, "") || href;

@@ -56,20 +56,17 @@ function HomeGrid({
             <p className="news__date news__date--kind">Artykuł</p>
             <h3 className="news__card-title">{PINNED_ARTICLE.title}</h3>
             <p className="news__excerpt">{PINNED_ARTICLE.excerpt}</p>
-            <a
-              href={PINNED_ARTICLE.href}
-              className="news__more-inline news__more-inline--external"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Dowiedz się więcej
-              <span className="news__more-arrow" aria-hidden>
-                →
-              </span>
-              <span className="news__more-host">
+            <p className="news__more-inline news__more-inline--external">
+              Dowiedz się więcej:{" "}
+              <a
+                href={PINNED_ARTICLE.href}
+                className="news__more-host"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {hostForExternalHref(PINNED_ARTICLE.href)}
-              </span>
-            </a>
+              </a>
+            </p>
           </article>
         </li>
       ) : null}
@@ -105,14 +102,17 @@ function HomeMobileList({
         <li className="news__row">
           <div className="news__row-copy">
             <h3 className="news__row-title">{PINNED_ARTICLE.title}</h3>
-            <a
-              href={PINNED_ARTICLE.href}
-              className="news__row-more"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Dowiedz się więcej → {hostForExternalHref(PINNED_ARTICLE.href)}
-            </a>
+            <p className="news__row-more news__row-more--external">
+              Dowiedz się więcej:{" "}
+              <a
+                href={PINNED_ARTICLE.href}
+                className="news__more-host"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {hostForExternalHref(PINNED_ARTICLE.href)}
+              </a>
+            </p>
           </div>
           <div className="news__row-thumb" aria-hidden>
             <Image
@@ -134,14 +134,17 @@ function HomeMobileList({
           <Link href={href}>{post.title}</Link>
         );
         const more = external ? (
-          <a
-            href={href}
-            className="news__row-more"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Dowiedz się więcej → {hostForExternalHref(href)}
-          </a>
+          <p className="news__row-more news__row-more--external">
+            Dowiedz się więcej:{" "}
+            <a
+              href={href}
+              className="news__more-host"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {hostForExternalHref(href)}
+            </a>
+          </p>
         ) : (
           <Link href={href} className="news__row-more">
             Czytaj dalej
