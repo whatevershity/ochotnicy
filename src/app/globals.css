@@ -4230,17 +4230,23 @@ a.news__more-inline:hover {
 }
 
 .post__list {
-  margin: 0 0 1.5em;
-  padding-left: 1.25rem;
+  margin: 0.35em 0 1.65em;
+  padding-left: 1.35rem;
+  list-style: disc;
 }
 
 .post__list li {
-  margin: 0 0 0.55em;
-  padding-left: 0.2rem;
+  margin: 0 0 0.65em;
+  padding-left: 0.35rem;
+  line-height: 1.55;
 }
 
 .post__list li:last-child {
   margin-bottom: 0;
+}
+
+.post__list--ol {
+  list-style: decimal;
 }
 
 .post__callout {
