@@ -17,4 +17,5 @@ Kiedy: 17 lipca, 16:00
 Gdzie: Skorupki 6a (Przychodnia Skłot)
 
 Zapraszamy również na uroczystość upamiętniającą Dąbrowszczaków na Cmentarzu Wojskowym na Powązkach, która odbędzie się o 12:00 tego samego dnia (17 lipca).
-link do wydarzenia: https://fb.me/e/P1AUIQTr
+
+Link do wydarzenia: [fb.me/e/P1AUIQTr](https://fb.me/e/P1AUIQTr)

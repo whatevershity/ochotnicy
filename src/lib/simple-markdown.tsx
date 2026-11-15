@@ -92,6 +92,57 @@ export function renderInlineMarkdown(text: string): ReactNode[] {
   return inline(text);
 }
 
+function isSafeHref(href: string): boolean {
+  return (
+    href.startsWith("http://") ||
+    href.startsWith("https://") ||
+    href.startsWith("mailto:") ||
+    href.startsWith("/")
+  );
+}
+
+function linkNode(key: number, href: string, label: string): ReactNode {
+  if (!isSafeHref(href)) return label;
+  return (
+    <a
+      key={key}
+      href={href}
+      {...(href.startsWith("http")
+        ? { target: "_blank", rel: "noopener noreferrer" }
+        : {})}
+    >
+      {label}
+    </a>
+  );
+}
+
+/** Gołe http(s)://… w zwykłym tekście → prawdziwy link. */
+function withAutolinks(text: string, keyStart: number): {
+  nodes: ReactNode[];
+  nextKey: number;
+} {
+  const nodes: ReactNode[] = [];
+  const re = /https?:\/\/[^\s<>\[\]()]+/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  let key = keyStart;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    let href = m[0];
+    // Odetnij końcowe znaki interpunkcji przyklejone do URL
+    let trail = "";
+    while (/[.,;:!?)]$/.test(href)) {
+      trail = href.slice(-1) + trail;
+      href = href.slice(0, -1);
+    }
+    nodes.push(linkNode(key++, href, href));
+    if (trail) nodes.push(trail);
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return { nodes, nextKey: key };
+}
+
 function inline(text: string): ReactNode[] {
   const nodes: ReactNode[] = [];
   const re = /(\*\*[^*]+\*\*|\*[^*]+\*|\[[^\]]+\]\([^)]+\))/g;
@@ -99,7 +150,11 @@ function inline(text: string): ReactNode[] {
   let m: RegExpExecArray | null;
   let key = 0;
   while ((m = re.exec(text)) !== null) {
-    if (m.index > last) nodes.push(text.slice(last, m.index));
+    if (m.index > last) {
+      const auto = withAutolinks(text.slice(last, m.index), key);
+      nodes.push(...auto.nodes);
+      key = auto.nextKey;
+    }
     const token = m[0];
     if (token.startsWith("**")) {
       nodes.push(<strong key={key++}>{token.slice(2, -2)}</strong>);
@@ -108,31 +163,14 @@ function inline(text: string): ReactNode[] {
     } else {
       const link = token.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
       if (link) {
-        const href = link[2];
-        const safe =
-          href.startsWith("http://") ||
-          href.startsWith("https://") ||
-          href.startsWith("mailto:") ||
-          href.startsWith("/");
-        nodes.push(
-          safe ? (
-            <a
-              key={key++}
-              href={href}
-              {...(href.startsWith("http")
-                ? { target: "_blank", rel: "noopener noreferrer" }
-                : {})}
-            >
-              {link[1]}
-            </a>
-          ) : (
-            link[1]
-          ),
-        );
+        nodes.push(linkNode(key++, link[2], link[1]));
       }
     }
     last = m.index + token.length;
   }
-  if (last < text.length) nodes.push(text.slice(last));
+  if (last < text.length) {
+    const auto = withAutolinks(text.slice(last), key);
+    nodes.push(...auto.nodes);
+  }
   return nodes;
 }
