@@ -1232,7 +1232,8 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
     position: relative;
     left: auto;
     top: auto;
-    transform: translateY(-0.85rem);
+    /* tylko logo niżej — transform nie rusza tytułu / leadu */
+    transform: translateY(1.15rem);
     width: clamp(5.75rem, 24vw, 7.25rem);
     height: clamp(5.75rem, 24vw, 7.25rem);
     margin: 0 0 2.35rem;
