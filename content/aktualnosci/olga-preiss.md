@@ -1,7 +1,7 @@
 ---
 title: "Olga Preiss"
 date: "2022-05-22"
-excerpt: "Olga Preiss to jedna z niewielu osób z Polski, które dołączyły w Hiszpanii do antyfaszystowskich milicji POUM. Urodziła się w październiku 1907 roku w Stryju (obecnie w Ukrainie) w mieszczańskiej rodzinie żydowskiej. W 1926 roku wyjechała do Paryża na studia medyczne, dzięki…"
+excerpt: "Olga Preiss to jedna z niewielu osób z Polski, które dołączyły w Hiszpanii do antyfaszystowskich milicji POUM. Urodziła się w październiku 1907 roku w Stryju (obecnie w Ukrainie) w mieszczańskiej rodzinie żydowskiej."
 image: "/aktualnosci/olga-preiss.jpg"
 caption: "Olga Preiss"
 gallery:

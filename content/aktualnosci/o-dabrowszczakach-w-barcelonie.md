@@ -1,7 +1,7 @@
 ---
 title: "Międzynarodowy Kongres: Badania i pamięć Brygad Międzynarodowych"
 date: "2025-12-06"
-excerpt: "W dniach 30-31 października 2025 na Uniwersytecie Barcelońskim odbył się Pierwszy Międzynarodowy Kongres: Badania i pamięć Brygad Międzynarodowych [I Congrés Internacional. Recerca i memòria de les Brigades Internacionals]. W ramach wydarzenia zostało wygłoszonych…"
+excerpt: "W dniach 30-31 października 2025 na Uniwersytecie Barcelońskim odbył się Pierwszy Międzynarodowy Kongres: Badania i pamięć Brygad Międzynarodowych [I Congrés Internacional. Recerca i memòria de les Brigades Internacionals]."
 image: "/aktualnosci/o-dabrowszczakach-w-barcelonie.jpg"
 source: "https://www.ochotnicywolnosci.org/o-dabrowszczakach-w-barcelonie/"
 ---

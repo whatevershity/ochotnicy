@@ -1,7 +1,7 @@
 ---
 title: "Poszukiwania mogiły Interbrygadzistów"
 date: "2024-08-22"
-excerpt: "Ruszyły badania mające potwierdzić lokalizację mogiły ochotników Brygad Międzynarodowych w Madrycie ze szczątkami 451 żołnierzy – w tym 14 Dąbrowszczaków. W 1941 roku frankistowskie władze dokonały profanacji cmentarza Brygad Międzynarodowych, dokonując ekshumacji i…"
+excerpt: "Ruszyły badania mające potwierdzić lokalizację mogiły ochotników Brygad Międzynarodowych w Madrycie ze szczątkami 451 żołnierzy – w tym 14 Dąbrowszczaków."
 image: "/aktualnosci/poszukiwania-mogily-interbrygadzistow.jpg"
 source: "https://www.ochotnicywolnosci.org/poszukiwania-mogily-interbrygadzistow/"
 ---

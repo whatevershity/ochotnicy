@@ -1,7 +1,7 @@
 ---
 title: "Adam Lewiński upamiętniony w Katalonii!"
 date: "2025-12-09"
-excerpt: "Dąbrowszczak Adam Lewiński upamiętniony w Katalonii! Każdego roku katalońskie władze dokonują upamiętnienia żołnierzy poległych i zaginionych w trakcie bitwy nad rzeką Ebro. Uroczystość odbywa się w miejscu pamięci Les Camposines, gdzie na ścianach mauzoleum co roku…"
+excerpt: "Dąbrowszczak Adam Lewiński upamiętniony w Katalonii! Każdego roku katalońskie władze dokonują upamiętnienia żołnierzy poległych i zaginionych w trakcie bitwy nad rzeką Ebro."
 image: "/aktualnosci/adam-lewinski-upamietniony-w-katalonii.jpg"
 source: "https://www.ochotnicywolnosci.org/adam-lewinski-upamietniony-w-katalonii/"
 ---

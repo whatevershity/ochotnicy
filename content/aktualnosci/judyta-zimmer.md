@@ -1,7 +1,7 @@
 ---
 title: "Judyta Zimmer"
 date: "2021-02-11"
-excerpt: "Judyta Zimmer „Duszka” urodziła się w 1908 roku w Złoczowie (obecnie Ukraina), w 1930 roku wyjeżdża do Francji, aby rozpocząć studia medyczne. Na miejscu wstępuje do związanego z komunistami Federacyjnego Związku Studentów oraz do młodzieżówki komunistycznej. Po zakończeniu…"
+excerpt: "Judyta Zimmer „Duszka” urodziła się w 1908 roku w Złoczowie (obecnie Ukraina), w 1930 roku wyjeżdża do Francji, aby rozpocząć studia medyczne. Na miejscu wstępuje do związanego z komunistami Federacyjnego Związku Studentów oraz do młodzieżówki komunistycznej."
 image: "/aktualnosci/judyta-zimmer.jpg"
 caption: "Judyta Zimmer „Duszka”"
 gallery:

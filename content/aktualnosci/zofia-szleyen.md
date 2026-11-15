@@ -1,7 +1,7 @@
 ---
 title: "Zofia Szleyen"
 date: "2021-03-05"
-excerpt: "Zofia Szleyen urodziła się w 1904 roku w Łodzi, na Uniwersytecie Jagiellońskim ukończyła studia chemiczne, następnie pracowała w laboratorium chemiczno-analitycznym oraz w szpitalu w Łodzi. Członkini Związku Zawodowego Chemików i Bakteriologów. Sympatyzowała z ruchem…"
+excerpt: "Zofia Szleyen urodziła się w 1904 roku w Łodzi, na Uniwersytecie Jagiellońskim ukończyła studia chemiczne, następnie pracowała w laboratorium chemiczno-analitycznym oraz w szpitalu w Łodzi. Członkini Związku Zawodowego Chemików i Bakteriologów."
 image: "/aktualnosci/zofia-szleyen.jpg"
 source: "https://www.ochotnicywolnosci.org/zofia-szleyen/"
 kind: "historia"

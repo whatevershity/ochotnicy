@@ -1,7 +1,7 @@
 ---
 title: "Sant Pere de Torrelló"
 date: "2021-09-10"
-excerpt: "15 grudnia 1938 Dąbrowszczacy postanowili zorganizować w miasteczku Sant Pere de Torrelló Wielki Festiwal Narodowości XIII Brygady Międzynarodowej im. J. Dąbrowskiego. W skład Brygady wchodzili ochotnicy narodowości polskiej, żydowskiej, węgierskiej, ukraińskiej,…"
+excerpt: "Pożegnanie Dąbrowszczaków w Sant Pere de Torelló 21 września 1938 roku prezydent II Republiki Hiszpańskiej Juan Negrín zadeklarował na Zgromadzeniu Ogólnym Ligi Narodów natychmiastowe wycofanie wszystkich międzynarodowych ochotników z Hiszpanii."
 image: "/aktualnosci/sant-pere-de-torrello.jpg"
 source: "https://www.ochotnicywolnosci.org/sant-pere-de-torrello/"
 kind: "historia"

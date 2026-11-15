@@ -1,7 +1,7 @@
 ---
 title: "Obywatelstwo hiszpańskie dla potomków Dąbrowszczaków"
 date: "2022-10-29"
-excerpt: "Historyczny moment! Rząd Hiszpanii opublikował nowe Prawo o Pamięci Demokratycznej, które zostało przegłosowane przez parlament w lipcu tego roku. Jest to zbiór praw, które mają przywrócić sprawiedliwość ofiarom frankizmu i rozliczyć się z jego dziedzictwem."
+excerpt: "Historyczny moment! Rząd Hiszpanii opublikował nowe Prawo o Pamięci Demokratycznej, które zostało przegłosowane przez parlament w lipcu tego roku."
 image: "/aktualnosci/obywatelstwo-hiszpanskie-dla-potomkow-dabrowszczakow.jpg"
 source: "https://www.ochotnicywolnosci.org/obywatelstwo-hiszpanskie-dla-potomkow-dabrowszczakow/"
 ---

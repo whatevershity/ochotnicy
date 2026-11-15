@@ -1,7 +1,7 @@
 ---
 title: "Zmarł ostatni interbrygadzista"
 date: "2021-05-25"
-excerpt: "W wieku 101 lat zmarł Josep Almudever, ostatni ochotnik Brygad Międzynarodowych. Josep urodził się 30 lipca 1919 roku Marsylii w rodzinie hiszpańskich emigrantów. Gdy wybuchła wojna domowa w Hiszpanii zaciągnął się do w szeregi sił republikańskich. Początkowo walczył w…"
+excerpt: "W wieku 101 lat zmarł Josep Almudever, ostatni ochotnik Brygad Międzynarodowych. Josep urodził się 30 lipca 1919 roku Marsylii w rodzinie hiszpańskich emigrantów."
 image: "/aktualnosci/zmarl-ostatni-interbrygadzista.jpg"
 source: "https://www.ochotnicywolnosci.org/zmarl-ostatni-interbrygadzista/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Komunikat o odwołaniu wydarzeń w lipcu 2020"
 date: "2020-06-19"
-excerpt: "Z powodu pandemii i związanych z nią obostrzeń nasze stowarzyszenie podjęło decyzję, aby w tym roku wyjątkowo nie organizować przygotowywanych przez nas od lat wydarzeń upamiętniających kolejne rocznice wybuchu hiszpańskiej wojny domowej. Nasi przedstawiciele i…"
+excerpt: "Z powodu pandemii i związanych z nią obostrzeń nasze stowarzyszenie podjęło decyzję, aby w tym roku wyjątkowo nie organizować przygotowywanych przez nas od lat wydarzeń upamiętniających kolejne rocznice wybuchu hiszpańskiej wojny domowej."
 image: "/aktualnosci/komunikat-o-odwolaniu-wydarzen-w-lipcu-2020.png"
 source: "https://www.ochotnicywolnosci.org/komunikat-o-odwolaniu-wydarzen-w-lipcu-2020/"
 ---

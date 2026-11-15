@@ -1,7 +1,7 @@
 ---
 title: "Mural dla Dąbrowszczaków – ODSŁONIĘCIE"
 date: "2021-07-13"
-excerpt: "17 lipca 2021 roku (sobota), dokładnie w 85. rocznicę wybuchu hiszpańskiej wojny domowej – pierwszego militarnego starcia z siłami faszystowskimi, odsłonimy mural poświęcony Dąbrowszczakom…"
+excerpt: "17 lipca 2021 roku (sobota), dokładnie w 85. rocznicę wybuchu hiszpańskiej wojny domowej – pierwszego militarnego starcia z siłami faszystowskimi, odsłonimy mural poświęcony Dąbrowszczakom – antyfaszystkom i antyfaszystom z Polski, którzy jako ochotnicy walczyli w tej wojnie w szeregach republikańskich."
 image: "/aktualnosci/mural-dla-dabrowszczakow-odsloniecie.png"
 source: "https://www.ochotnicywolnosci.org/mural-dla-dabrowszczakow-odsloniecie/"
 ---

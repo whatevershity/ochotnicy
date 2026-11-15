@@ -60,22 +60,62 @@ export function readingTimeMinutes(text: string): number {
   return Math.max(1, Math.round(words / 180));
 }
 
+const SENTENCE_ABBREV =
+  /\b(?:m\.in|ul|al|pl|św|dr|prof|nr|tzw|t\.j|tj|itd|itp|np|r|tys|ok|godz|min|ks|im|red|wyd|ang|niem|hiszp|fr|ros|ukr|cz|pl|es|en)\.$/iu;
+
+/** Dzieli tekst na pełne zdania (bez ucinania w połowie). */
+export function splitSentences(text: string): string[] {
+  const clean = text.replace(/\s+/g, " ").trim();
+  if (!clean) return [];
+
+  const parts: string[] = [];
+  let buf = "";
+  for (let i = 0; i < clean.length; i++) {
+    buf += clean[i];
+    if (!".!?".includes(clean[i]) || i + 1 >= clean.length) continue;
+    const rest = clean.slice(i + 1);
+    if (!/^\s+[A-ZĄĆĘŁŃÓŚŹŻ0-9„«"(]/.test(rest)) continue;
+    const candidate = buf.trim();
+    if (SENTENCE_ABBREV.test(candidate) || /\d\.$/.test(candidate)) continue;
+    parts.push(candidate);
+    buf = "";
+    while (i + 1 < clean.length && /\s/.test(clean[i + 1])) i++;
+  }
+  const tail = buf.trim();
+  if (tail) parts.push(tail);
+  return parts;
+}
+
+/**
+ * 1–3 pełne zdania na lead / excerpt.
+ * Nigdy nie kończy wielokropkiem w połowie zdania.
+ */
+export function leadSentences(
+  text: string,
+  maxSentences = 3,
+  maxChars = 320,
+): string {
+  const sents = splitSentences(text);
+  if (!sents.length) return text.replace(/\s+/g, " ").trim();
+
+  const chosen: string[] = [sents[0]];
+  for (let i = 1; i < Math.min(maxSentences, sents.length); i++) {
+    const trial = [...chosen, sents[i]].join(" ");
+    if (chosen.length >= 1 && trial.length > maxChars) break;
+    chosen.push(sents[i]);
+    if (trial.length >= 140 && chosen.length >= 2) break;
+  }
+  return chosen.join(" ");
+}
+
 /**
  * Lead pod tytułem: naturalna długość (ok. 1–3 zdania).
- * Nie ucinamy na siłę — tylko gdy excerpt jest wyraźnie za długi.
+ * Nigdy nie ucina w połowie zdania.
  */
 export function compactLead(text: string): string {
   const clean = text.replace(/\s+/g, " ").trim();
   if (clean.length <= 280) return clean;
-
-  const window = clean.slice(0, 320);
-  const ends = [...window.matchAll(/[.!?…](?=\s|$)/g)];
-  const last = ends.at(-1);
-  if (last && last.index != null && last.index >= 120) {
-    return window.slice(0, last.index + 1).trim();
-  }
-  const space = window.lastIndexOf(" ");
-  return `${(space > 120 ? window.slice(0, space) : window).trim()}…`;
+  return leadSentences(clean, 3, 320);
 }
 
 /** Pierwszy akapit body (jedna linia). */
@@ -90,47 +130,88 @@ export function firstBodyParagraph(body: string): string {
   );
 }
 
-/**
- * Lead na stronie wpisu: pełny pierwszy akapit, gdy excerpt z listy
- * jest tylko jego skrótem (kończy się „…” / jest prefiksem).
- * Dzięki temu nie widać uciętego akapitu, a bodyWithoutLead nie
- * usuwa pełnego tekstu zostawiając sam skrót.
- */
-export function resolvePostLead(excerpt: string, body: string): string {
-  const first = firstBodyParagraph(body);
-  const ex = excerpt.replace(/\s+/g, " ").trim();
-  if (!ex) return first;
-  if (!first) return ex;
-
-  const exCore = ex.replace(/(?:\u2026|\.{2,}|…)\s*$/u, "").trim();
-  // Skrót z listy (z „…”) → pełny pierwszy akapit, żeby lead nie był ucięty.
-  if (first === ex || (exCore.length >= 40 && first.startsWith(exCore))) {
-    return first;
-  }
-  return ex;
+/** Plain text z początku body (do zbudowania leadu). */
+function bodyPlainStart(body: string): string {
+  const plain = body
+    .replace(/\r\n/g, "\n")
+    .replace(/!\[[^\]]*]\([^)]*\)/g, "")
+    .replace(/\[([^\]]+)]\([^)]*\)/g, "$1")
+    .trim();
+  const paras = plain
+    .split(/\n{2,}/)
+    .map((p) => p.replace(/\n/g, " ").trim())
+    .filter(Boolean);
+  return paras.slice(0, 3).join(" ");
 }
 
-/** Usuwa z body pierwszy akapit, jeśli jest tym samym co lead. */
+/**
+ * Lead na stronie wpisu: zawsze 1–3 pełne zdania z początku tekstu.
+ * Excerpt z listy (często skrócony „…”) nie może ucinać w połowie zdania.
+ */
+export function resolvePostLead(_excerpt: string, body: string): string {
+  return leadSentences(bodyPlainStart(body), 3, 320);
+}
+
+/**
+ * Usuwa z body lead (1–3 zdania) z początku — reszta idzie dalej bez duplikatu.
+ */
 export function bodyWithoutLead(body: string, lead: string): string {
-  const parts = body.replace(/\r\n/g, "\n").trim().split(/\n{2,}/);
-  if (!parts.length) return "";
-  const first = parts[0].replace(/\n/g, " ").trim();
   const leadNorm = lead.replace(/\s+/g, " ").trim();
   if (!leadNorm) return body.trim();
-  if (first === leadNorm) {
-    return parts.slice(1).join("\n\n").trim();
+
+  const normalized = body.replace(/\r\n/g, "\n").trim();
+  const parts = normalized.split(/\n{2,}/);
+  if (!parts.length) return "";
+
+  // Zbierz tekst od początku aż „zjedzony” lead; reszta zostaje.
+  let remainingLead = leadNorm;
+  const out: string[] = [];
+
+  for (let i = 0; i < parts.length; i++) {
+    const para = parts[i].replace(/\n/g, " ").trim();
+    if (!remainingLead) {
+      out.push(parts[i]);
+      continue;
+    }
+
+    const paraFlat = para.replace(/\s+/g, " ").trim();
+    if (paraFlat === remainingLead) {
+      remainingLead = "";
+      continue;
+    }
+
+    if (remainingLead.startsWith(paraFlat)) {
+      remainingLead = remainingLead.slice(paraFlat.length).trim();
+      continue;
+    }
+
+    if (paraFlat.startsWith(remainingLead)) {
+      const rest = paraFlat.slice(remainingLead.length).trim();
+      remainingLead = "";
+      if (rest) out.push(rest);
+      continue;
+    }
+
+    // Lead = pierwsze zdania w akapicie
+    if (paraFlat.startsWith(remainingLead.slice(0, Math.min(40, remainingLead.length)))) {
+      const sents = splitSentences(paraFlat);
+      const leadSents = splitSentences(remainingLead);
+      if (
+        leadSents.length &&
+        sents.length >= leadSents.length &&
+        sents.slice(0, leadSents.length).join(" ") === leadSents.join(" ")
+      ) {
+        const restSents = sents.slice(leadSents.length);
+        remainingLead = "";
+        if (restSents.length) out.push(restSents.join(" "));
+        continue;
+      }
+    }
+
+    out.push(parts[i]);
   }
-  // Prefiks tylko gdy lead nie wygląda na skrót z wielokropkiem
-  const leadCore = leadNorm.replace(/(?:\u2026|\.{2,}|…)\s*$/u, "").trim();
-  const looksTruncated = leadCore.length < leadNorm.length;
-  if (
-    !looksTruncated &&
-    leadNorm.length >= 80 &&
-    first.startsWith(leadNorm)
-  ) {
-    return parts.slice(1).join("\n\n").trim();
-  }
-  return body.trim();
+
+  return out.join("\n\n").trim();
 }
 
 /**
@@ -287,7 +368,12 @@ function getFileAktualnosci(): Aktualnosc[] {
 
   const files = fs
     .readdirSync(CONTENT_DIR)
-    .filter((f) => f.endsWith(".md") && !f.startsWith("_"));
+    .filter(
+      (f) =>
+        f.endsWith(".md") &&
+        !f.startsWith("_") &&
+        f.toLowerCase() !== "readme.md",
+    );
 
   return files.map((file) => {
     const slug = file.replace(/\.md$/, "");

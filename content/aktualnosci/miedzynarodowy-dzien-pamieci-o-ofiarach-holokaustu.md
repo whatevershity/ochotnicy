@@ -1,7 +1,7 @@
 ---
 title: "Międzynarodowy Dzień Pamięci o Ofiarach Holokaustu"
 date: "2021-01-27"
-excerpt: "Dziś przypada 76. rocznica wyzwolenia obozu Auschwitz oraz Międzynarodowy Dzień Pamięci o Ofiarach Holokaustu. W tym dniu pragniemy przypomnieć o żydowskich Dąbrowszczakach, którzy padli ofiarą Zagłady oraz byli więźniami obozów koncentracyjnych. Zanim zostali aresztowani i…"
+excerpt: "Dziś przypada 76. rocznica wyzwolenia obozu Auschwitz oraz Międzynarodowy Dzień Pamięci o Ofiarach Holokaustu. W tym dniu pragniemy przypomnieć o żydowskich Dąbrowszczakach, którzy padli ofiarą Zagłady oraz byli więźniami obozów koncentracyjnych."
 image: "/aktualnosci/miedzynarodowy-dzien-pamieci-o-ofiarach-holokaustu.png"
 source: "https://www.ochotnicywolnosci.org/miedzynarodowy-dzien-pamieci-o-ofiarach-holokaustu/"
 ---

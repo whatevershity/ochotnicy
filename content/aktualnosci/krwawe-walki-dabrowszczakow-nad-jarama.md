@@ -1,7 +1,7 @@
 ---
 title: "Krwawe walki Dąbrowszczaków nad Jaramą"
 date: "2022-02-13"
-excerpt: "13 grudnia 1937 roku, 85 lat temu, Dąbrowszczacy stoczyli krwawe walki podczas bitwy nad Jaramą. Poległo i zostało rannych około 170 z nich. Dąbrowszczakom wydano polecenie zaatakowania wzgórza obsadzonego przez frankistów, aby odciążyć newralgiczny odcinek broniony przez XI…"
+excerpt: "13 grudnia 1937 roku Dąbrowszczacy stoczyli krwawe walki podczas bitwy nad Jaramą. Poległo i zostało rannych około 170 z nich. Dąbrowszczakom wydano polecenie zaatakowania wzgórza obsadzonego przez frankistów, aby odciążyć newralgiczny odcinek broniony przez XI Brygadę Międzynarodową."
 image: "/aktualnosci/krwawe-walki-dabrowszczakow-nad-jarama.jpg"
 caption: "Dąbrowszczacy w bitwie nad Jaramą."
 gallery:
@@ -15,7 +15,7 @@ kind: "historia"
 
 Przez cały czas natarcia Dąbrowszczacy znajdywali się pod silnym ogniem kilkukrotnie liczniejszych sił frankistowskich. Udało im się jednak podejść pod faszystowskie pozycje, gdzie rozpoczęły się zacięte walki na śmierć i życie. Stracono łączność z dowództwem batalionu, brakowało amunicji, niemożliwe stało się ewakuowanie rannych żołnierzy, brakowało wsparcia artylerii. Podczas wycofywania się Dąbrowszczaków dochodziło do walk na bagnety. Relacje mówią o przypadkach wysadzania się granatem przez rannych, by nie dać się wziąć do niewoli i zabić kilku faszystów samobójczym atakiem.
 
-“Nie uciekaliśmy, bo brakowało sił. Faszyści stali na górze i strzelali do setki rozciągniętych w marszu ludzi” wspominał Jan Bernard.
+„Nie uciekaliśmy, bo brakowało sił. Faszyści stali na górze i strzelali do setki rozciągniętych w marszu ludzi” wspominał Jan Bernard.
 
 Po wycofaniu się Dąbrowszczaków na pozycje wyjściowe faszyści kontynuowali atak m.in. za pomocą marokańskiej kawalerii zdobywając okopy republikańskie i zmuszając polskich antyfaszystów do dalszego wycofywania się. Ponownie dochodziło do walki na bagnety i granaty. Dopiero wieczorem frankistowskie jednostki zaprzestały ataku.
 

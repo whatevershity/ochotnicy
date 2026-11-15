@@ -1,7 +1,7 @@
 ---
 title: "Złożyliśmy kwiaty na grobie Mariny Calvo de Fernandez"
 date: "2019-12-12"
-excerpt: "Na warszawskim Cmentarzu Wojskowym na Powązkach znajduje się grób Hiszpanki Mariny Calvo de Fernandez. Urodziła się w 1922 roku, była członkinią organizacji Juventudes Socialistas Unificadas (Zjednoczona Młodzież Socjalistyczna). Po upadku Republiki Hiszpańskiej przedostała…"
+excerpt: "Na warszawskim Cmentarzu Wojskowym na Powązkach znajduje się grób Hiszpanki Mariny Calvo de Fernandez. Urodziła się w 1922 roku, była członkinią organizacji Juventudes Socialistas Unificadas (Zjednoczona Młodzież Socjalistyczna)."
 image: "/aktualnosci/zlozylismy-kwiaty-na-grobie-mariny-calvo-de-fernandez.jpg"
 source: "https://www.ochotnicywolnosci.org/zlozylismy-kwiaty-na-grobie-mariny-calvo-de-fernandez/"
 ---
@@ -37,7 +37,7 @@ działalność we francuskim ruchu oporu otrzymał odznaczenie Legii
 Honorowej, Krzyż Wojenny oraz Medal Ruchu Oporu. Jednak nawet to nie
 uchroniło go przed represjami, jakie francuski rząd wymierzył w 1950
 roku w hiszpańskich członków i członkinie ruchu komunistycznego
-mieszkających we Francji. Operacja “Bolero-Paprika”, która polegała na
+mieszkających we Francji. Operacja „Bolero-Paprika”, która polegała na
 aresztowaniu, przesiedlaniu i wydalaniu z kraju, dotknęła około 170
 republikańskich imigrantów i imigrantek (przy okazji tej operacji z
 kraju wydalono również około 60 Polaków, także oskarżonych o działalność
@@ -56,7 +56,7 @@ Sebastian. Syn Mariny i Luisa ukończył Warszawską Akademię Medyczną i w
 połowie lat 70. zamieszkał w Szwecji.
 
  W wyniku francuskiej
-operacji “Bolero-Paprika” do Polski trafiło kilkanaście hiszpańskich
+operacji „Bolero-Paprika” do Polski trafiło kilkanaście hiszpańskich
 rodzin. Ciekawym zbiegiem okoliczności zakwaterowane je na osiedlu Praga
  II, tuż przy ulicy Dąbrowszczaków.
 

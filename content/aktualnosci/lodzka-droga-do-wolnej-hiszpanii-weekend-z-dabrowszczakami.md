@@ -1,7 +1,7 @@
 ---
 title: "Łódzka droga do wolnej Hiszpanii – weekend z Dąbrowszczakami"
 date: "2019-04-14"
-excerpt: "W minioną sobotę mieliśmy i miałyśmy ogromną przyjemność współorganizować pierwsze w Łodzi wydarzenie poświęcone Dąbrowszczakom: „Łódzka droga do wolnej Hiszpanii – weekend z Dąbrowszczakami”. Spotkanie rozpoczęło się pokazem powstałego niedawno filmu Dariusza Zalegi „Pięść i…"
+excerpt: "W minioną sobotę mieliśmy i miałyśmy ogromną przyjemność współorganizować pierwsze w Łodzi wydarzenie poświęcone Dąbrowszczakom: „Łódzka droga do wolnej Hiszpanii – weekend z Dąbrowszczakami”. Spotkanie rozpoczęło się pokazem powstałego niedawno filmu Dariusza Zalegi „Pięść i dynamit."
 image: "/aktualnosci/lodzka-droga-do-wolnej-hiszpanii-weekend-z-dabrowszczakami.jpg"
 source: "https://www.ochotnicywolnosci.org/lodzka-droga-do-wolnej-hiszpanii-weekend-z-dabrowszczakami/"
 ---

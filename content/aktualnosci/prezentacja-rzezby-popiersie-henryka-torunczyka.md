@@ -1,7 +1,7 @@
 ---
-title: "Prezentacja rzeźby “Popiersie Henryka Toruńczyka”"
+title: "Prezentacja rzeźby „Popiersie Henryka Toruńczyka”"
 date: "2022-09-24"
-excerpt: "Mamy przyjemność zaprosić do Muzeum Niepodległości w Warszawie na prezentację popiersia Henryka Toruńczyka, ostatniego dowódcy Dąbrowszczaków, autorstwa Barbary Zbrożyny. Nasze stowarzyszenie objęło wydarzenie patronatem honorowym. W ramach prezentacji wygłoszone zostaną…"
+excerpt: "Mamy przyjemność zaprosić do Muzeum Niepodległości w Warszawie na prezentację popiersia Henryka Toruńczyka, ostatniego dowódcy Dąbrowszczaków, autorstwa Barbary Zbrożyny. Nasze stowarzyszenie objęło wydarzenie patronatem honorowym."
 image: "/aktualnosci/prezentacja-rzezby-popiersie-henryka-torunczyka.jpg"
 source: "https://www.ochotnicywolnosci.org/prezentacja-rzezby-popiersie-henryka-torunczyka/"
 ---

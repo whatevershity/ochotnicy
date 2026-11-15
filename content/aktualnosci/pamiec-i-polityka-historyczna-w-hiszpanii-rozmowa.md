@@ -1,12 +1,12 @@
 ---
 title: "Pamięć i polityka historyczna w Hiszpanii – Rozmowa"
 date: "2022-07-08"
-excerpt: "Społeczna i polityczna pamięć wokół hiszpańskiej wojny domowej 1936-1939 i nieomal czterdziestu lat frankistowskiej dyktatury, a także wytwarzana wokół nich polityka historyczna stanowi dziś przedmiot sporu w hiszpańskim społeczeństwie i dyskusji politycznych jak nigdy wcześniej…"
+excerpt: "Rozmowa „Pamięć i polityka historyczna w Hiszpanii” w ramach wydarzeń „Pamięci Dąbrowszczaków – 86. rocznica wybuchu wojny w Hiszpanii”."
 image: "/aktualnosci/pamiec-i-polityka-historyczna-w-hiszpanii-rozmowa.jpg"
 source: "https://www.ochotnicywolnosci.org/pamiec-i-polityka-historyczna-w-hiszpanii-rozmowa/"
 ---
 
-Rozmowa “Pamięć i polityka historyczna w Hiszpanii” w ramach wydarzeń “Pamięci Dąbrowszczaków – 86. rocznica wybuchu wojny w Hiszpanii”.
+Rozmowa „Pamięć i polityka historyczna w Hiszpanii” w ramach wydarzeń „Pamięci Dąbrowszczaków – 86. rocznica wybuchu wojny w Hiszpanii”.
 
  Społeczna i polityczna pamięć wokół hiszpańskiej wojny domowej 1936-1939 i nieomal czterdziestu lat frankistowskiej dyktatury, a także wytwarzana wokół nich polityka historyczna stanowi dziś przedmiot sporu w hiszpańskim społeczeństwie i dyskusji politycznych jak nigdy wcześniej. Po latach narzuconego przez państwo milczenia wokół powojennej i poreżimowej traumy obserwujemy coraz większą potrzebę rozliczenia się z przeszłością.
 
@@ -19,7 +19,7 @@ Jaka jest świadomości społeczna w Hiszpanii wokół Brygad Międzynarodowych 
 
  Katarzyna Kobylarczyk – dziennikarka i reporterka, autorka m.in. reportażu „Strup. Hiszpania rozdrapuje rany” podejmującego temat masowych mogił czasów wojny domowej i dyktatury oraz pamięci historycznej, uhonorowanego Nagrodą im. Ryszarda Kapuścińskiego za reportaż literacki.
 
- Aleksandra Lipczak – dziennikarka, reporterka, autorka książek poświęconych Hiszpanii: „Ludzie z placu słońca” oraz “Lajla znaczy noc” (Nagroda Literacka im. Witolda Gombrowicza, Nagroda im. Beaty Pawlak, finalistka Nagrody Literackiej Nike 2021).
+ Aleksandra Lipczak – dziennikarka, reporterka, autorka książek poświęconych Hiszpanii: „Ludzie z placu słońca” oraz „Lajla znaczy noc” (Nagroda Literacka im. Witolda Gombrowicza, Nagroda im. Beaty Pawlak, finalistka Nagrody Literackiej Nike 2021).
 
  Prowadzenie: Jeremi Galdamez (Stowarzyszenie Ochotnicy Wolności) i Judyta Wachowska (UAM w Poznaniu / Stowarzyszenie Ochotnicy Wolności)
 

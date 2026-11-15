@@ -1,7 +1,7 @@
 ---
 title: "83. rocznica wybuchu wojny w Hiszpanii"
 date: "2019-06-20"
-excerpt: "Przy okazji 83. rocznicy wybuchu hiszpańskiej wojny domowej zapraszamy na wydarzenie upamiętniające Dąbrowszczaków – antyfaszystów i antyfaszystki z Polski biorących w niej udział. W ramach obchodów chcemy również uczcić niedawne przywrócenie ulicy Dąbrowszczaków na mapę…"
+excerpt: "Przy okazji 83. rocznicy wybuchu hiszpańskiej wojny domowej zapraszamy na wydarzenie upamiętniające Dąbrowszczaków – antyfaszystów i antyfaszystki z Polski biorących w niej udział."
 image: "/aktualnosci/83-rocznica-wybuchu-wojny-w-hiszpanii.jpg"
 source: "https://www.ochotnicywolnosci.org/83-rocznica-wybuchu-wojny-w-hiszpanii/"
 ---
@@ -40,8 +40,8 @@ porozmawiamy z przedstawicielkami i przedstawicielami opozycyjnych
 partii politycznych o tym, jakie są potencjalne drogi wyjścia z tej
 sytuacji i jakie są stanowiska poszczególnych ugrupowań w tym zakresie; 
  18:00
- – projekcja w Kinie Muranów (ul. Andersa 5) filmu “Duchy wojny domowej”
- (“El Silencio de Otros”, 2018), pokazującego, jak osoby ocalone z
+ – projekcja w Kinie Muranów (ul. Andersa 5) filmu „Duchy wojny domowej”
+ („El Silencio de Otros”, 2018), pokazującego, jak osoby ocalone z
 dyktatury Franco po dziesięcioleciach milczenia konfrontują się z
 cieszącymi się bezkarnością sprawcami brutalnych zbrodni i podejmują
 walkę o ujawnienie prawdy i zniesienie prawa do amnestii dla

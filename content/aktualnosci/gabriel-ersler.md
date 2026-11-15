@@ -1,7 +1,7 @@
 ---
 title: "Gabriel Ersler"
 date: "2022-01-14"
-excerpt: "Gabriel Ersler (1913–2005) urodził się we Włocławku, studiował medycynę w Berlinie do 1933 roku, następnie do 1936 roku w Bernie, gdzie sympatyzował z Socjaldemokratyczną Partią Szwajcarii. Do Hiszpanii przybył we wrześniu 1937."
+excerpt: "Gabriel Ersler (1913–2005) urodził się we Włocławku, studiował medycynę w Berlinie do 1933 roku, następnie do 1936 roku w Bernie, gdzie sympatyzował z Socjaldemokratyczną Partią Szwajcarii."
 image: "/aktualnosci/gabriel-ersler.jpg"
 caption: "Gabriel Ersler w Hiszpanii, 1938"
 source: "https://www.ochotnicywolnosci.org/gabriel-ersler/"

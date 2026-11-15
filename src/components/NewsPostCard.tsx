@@ -22,27 +22,29 @@ export function shortenNewsExcerpt(
   text: string,
   target = NEWS_EXCERPT_TARGET,
 ): string {
-  const clean = text.replace(/\s+/g, " ").trim();
-  if (clean.length <= target + 12) {
-    return clean.replace(/\u2026|\.{3}\s*$/, "").trim();
-  }
+  const clean = text.replace(/\s+/g, " ").trim().replace(/(?:\u2026|\.{3})\s*$/u, "");
+  if (clean.length <= target + 12) return clean;
 
-  const slice = clean.slice(0, target + 24);
+  // Tylko pełne zdania — bez urywania w połowie.
+  const slice = clean.slice(0, target + 80);
   const sentenceEnds = [...slice.matchAll(/[.!?](?=\s|$)/g)];
   if (sentenceEnds.length > 0) {
-    const last = sentenceEnds[sentenceEnds.length - 1];
-    const end = (last.index ?? 0) + 1;
-    if (end >= Math.floor(target * 0.55)) {
+    let best = sentenceEnds[0];
+    for (const end of sentenceEnds) {
+      const at = (end.index ?? 0) + 1;
+      if (at <= target + 24) best = end;
+      else break;
+    }
+    const end = (best.index ?? 0) + 1;
+    if (end >= Math.floor(target * 0.4)) {
       return slice.slice(0, end).trim();
     }
   }
 
-  const wordBreak = slice.lastIndexOf(" ");
-  if (wordBreak > Math.floor(target * 0.55)) {
-    return `${slice.slice(0, wordBreak).replace(/[.,;:–—-]+$/, "").trim()}…`;
-  }
-
-  return `${slice.trim()}…`;
+  // Awaryjnie: pierwsze zdanie z całego tekstu (nawet dłuższe niż target).
+  const firstEnd = clean.search(/[.!?](?=\s|$)/);
+  if (firstEnd >= 0) return clean.slice(0, firstEnd + 1).trim();
+  return clean;
 }
 
 type NewsPostCardProps = {

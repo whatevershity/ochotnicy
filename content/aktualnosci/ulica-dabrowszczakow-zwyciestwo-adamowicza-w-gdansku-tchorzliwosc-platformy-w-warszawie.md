@@ -1,7 +1,7 @@
 ---
 title: "Ulica Dąbrowszczaków: Zwycięstwo Adamowicza w Gdańsku, tchórzliwość Platformy w Warszawie"
 date: "2021-02-10"
-excerpt: "Wojewódzki Sąd Administracyjny w Gdańsku uchylił wczoraj zarządzenia zastępcze Wojewody Pomorskiego Dariusza Drelicha, zmieniające nazwy siedmiu gdańskich ulic w związku z tzw. ustawą dekomunizacyjną. Wśród przywróconych decyzją sądu patronów są m.in.…"
+excerpt: "Wojewódzki Sąd Administracyjny w Gdańsku uchylił wczoraj zarządzenia zastępcze Wojewody Pomorskiego Dariusza Drelicha, zmieniające nazwy siedmiu gdańskich ulic w związku z tzw. ustawą dekomunizacyjną. Wśród przywróconych decyzją sądu patronów są m.in. Dąbrowszczacy."
 image: "/aktualnosci/ulica-dabrowszczakow-zwyciestwo-adamowicza-w-gdansku-tchorzliwosc-platformy-w-warszawie.jpg"
 source: "https://krytykapolityczna.pl/kraj/ulica-dabrowszczakow-gdansk-warszawa/"
 kind: "artykul"

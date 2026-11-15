@@ -1,7 +1,7 @@
 ---
 title: "Mural upamiętniający Dąbrowszczaków"
 date: "2021-06-22"
-excerpt: "W 85. rocznicę wybuchu hiszpańskiej wojny domowej pragniemy upamiętnić Dąbrowszczaków – antyfaszystki i antyfaszystów z Polski, którzy pod hasłem „za wolność Waszą i naszą” walczyli w obronie II Republiki Hiszpańskiej i klasy pracującej…"
+excerpt: "W 85. rocznicę wybuchu hiszpańskiej wojny domowej pragniemy upamiętnić Dąbrowszczaków – antyfaszystki i antyfaszystów z Polski, którzy pod hasłem „za wolność Waszą i naszą” walczyli w obronie II Republiki Hiszpańskiej i klasy pracującej, z przestrogą, że „jeśli dziś padnie Madryt, jutro padnie Warszawa”."
 image: "/aktualnosci/mural-upamietniajacy-dabrowszczakow.jpg"
 source: "https://www.ochotnicywolnosci.org/mural-upamietniajacy-dabrowszczakow/"
 ---

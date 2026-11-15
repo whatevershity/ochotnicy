@@ -1,7 +1,7 @@
 ---
 title: "Pierwszy maja u Dąbrowszczaków"
 date: "2022-05-23"
-excerpt: "1 maja 1937 roku w miejscowości Cabanillas del Campo odbyła się pierwszomajowa uroczystość w batalionie Dąbrowszczaków. Wówczas został im przekazany słynny sztandar od KPP z hasłem „Najlepszym synom ludu polskiego – Za wolność Waszą i naszą”. W wydarzeniu brali udział…"
+excerpt: "1 maja 1937 roku w miejscowości Cabanillas del Campo odbyła się pierwszomajowa uroczystość w batalionie Dąbrowszczaków. Wówczas został im przekazany słynny sztandar od KPP z hasłem „Najlepszym synom ludu polskiego – Za wolność Waszą i naszą”."
 image: "/aktualnosci/pierwszy-maja-u-dabrowszczakow.jpg"
 source: "https://www.ochotnicywolnosci.org/pierwszy-maja-u-dabrowszczakow/"
 kind: "historia"

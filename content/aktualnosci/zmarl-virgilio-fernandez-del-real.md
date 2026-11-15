@@ -1,7 +1,7 @@
 ---
 title: "Zmarł Virgilio Fernandez del Real"
 date: "2019-12-17"
-excerpt: "Jeden z ostatnich hiszpańskich żołnierzy XIII Brygady Międzynarodowej im. J. Dąbrowskiego, Virgilio Fernandez del Real zmarł dziś w wieku 100 lat w Meksyku. Virgilio był lekarzem i porucznikiem służby medycznej w 35 Dywizji Brygad Międzynarodowych, całą hiszpańską wojnę…"
+excerpt: "Jeden z ostatnich hiszpańskich żołnierzy XIII Brygady Międzynarodowej im. J. Dąbrowskiego, Virgilio Fernandez del Real zmarł dziś w wieku 100 lat w Meksyku."
 image: "/aktualnosci/zmarl-virgilio-fernandez-del-real.jpg"
 source: "https://www.ochotnicywolnosci.org/zmarl-virgilio-fernandez-del-real/"
 ---
@@ -18,7 +18,7 @@ Jeden z ostatnich hiszpańskich żołnierzy XIII Brygady Międzynarodowej
 wzywając ich do zachowania ulicy upamiętniającej także jego towarzyszy
 broni i przyjaciół:
 
- “Plany  zmiany nazwy upamiętniającej Polaków, którzy poświęcali własne życie w  Hiszpanii, wydają mi się niesprawiedliwe i pozbawione wizji. Proszę,  zastanówcie się. Nie zróbcie tego!”
+ „Plany  zmiany nazwy upamiętniającej Polaków, którzy poświęcali własne życie w  Hiszpanii, wydają mi się niesprawiedliwe i pozbawione wizji. Proszę,  zastanówcie się. Nie zróbcie tego!”
 
  Dziękujemy za to zaangażowanie.
 

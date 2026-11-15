@@ -1,7 +1,7 @@
 ---
 title: "Wycieczka śladami Dąbrowszczaków / Marsz nad Jaramą"
 date: "2023-04-02"
-excerpt: "W dniach 21-26 lutego odbyliśmy wycieczkę po Hiszpanii śladami Dąbrowszczaków. Głównym punktem wyprawy był Marsz nad Jaramą, poświęcony w tym roku Dąbrowszczakom walczącym w Bitwie nad Jaramą w lutym 1937 roku. Zachęcamy do zapoznania się z relacją z poszczególnych etapów…"
+excerpt: "W dniach 21-26 lutego odbyliśmy wycieczkę po Hiszpanii śladami Dąbrowszczaków. Głównym punktem wyprawy był Marsz nad Jaramą, poświęcony w tym roku Dąbrowszczakom walczącym w Bitwie nad Jaramą w lutym 1937 roku."
 image: "/aktualnosci/wycieczka-sladami-dabrowszczakow-marsz-nad-jarama.jpg"
 source: "https://www.ochotnicywolnosci.org/wycieczka-sladami-dabrowszczakow-marsz-nad-jarama/"
 ---

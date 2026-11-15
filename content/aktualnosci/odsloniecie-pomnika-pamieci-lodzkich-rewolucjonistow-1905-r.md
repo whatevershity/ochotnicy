@@ -1,7 +1,7 @@
 ---
 title: "Odsłonięcie Pomnika Pamięci Łódzkich Rewolucjonistów 1905 r."
 date: "2019-05-24"
-excerpt: "Na Wzgórzu Niepodległości w Łodzi odsłonięty został Pomnik Pamięci Łódzkich Rewolucjonistów – Bojowników o Wolność, rozstrzelanych w okresie rewolucji 1905. Bardzo cieszy nas wiadomość, że pamięć o nich została utrwalona. Pamiętamy bowiem, że robotnicy walczyli także o…"
+excerpt: "Na Wzgórzu Niepodległości w Łodzi odsłonięty został Pomnik Pamięci Łódzkich Rewolucjonistów – Bojowników o Wolność, rozstrzelanych w okresie rewolucji 1905. Bardzo cieszy nas wiadomość, że pamięć o nich została utrwalona."
 image: "/aktualnosci/odsloniecie-pomnika-pamieci-lodzkich-rewolucjonistow-1905-r.png"
 source: "https://www.ochotnicywolnosci.org/odsloniecie-pomnika-pamieci-lodzkich-rewolucjonistow-1905-r/"
 ---

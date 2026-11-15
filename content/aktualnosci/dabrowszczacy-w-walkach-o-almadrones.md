@@ -1,7 +1,7 @@
 ---
 title: "Dąbrowszczacy w walkach o Almadrones"
 date: "2022-01-03"
-excerpt: "85 lat temu, 2 stycznia 1937 roku, w walkach o miasteczko Almadrones poległ Antek Kochanek, dowódca Batalionu Dąbrowskiego, działacz związkowy wśród polskiej emigracji robotniczej we Francji. Był jednym z pierwszych ochotników Polskich, który przybył do Hiszpanii, by stanąć…"
+excerpt: "85 lat temu, 2 stycznia 1937 roku, w walkach o miasteczko Almadrones poległ Antek Kochanek, dowódca Batalionu Dąbrowskiego, działacz związkowy wśród polskiej emigracji robotniczej we Francji. Był jednym z pierwszych ochotników Polskich, który przybył do Hiszpanii, by stanąć do walki z faszyzmem."
 image: "/aktualnosci/dabrowszczacy-w-walkach-o-almadrones.jpg"
 source: "https://www.ochotnicywolnosci.org/dabrowszczacy-w-walkach-o-almadrones/"
 kind: "historia"

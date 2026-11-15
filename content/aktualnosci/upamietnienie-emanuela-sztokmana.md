@@ -1,7 +1,7 @@
 ---
 title: "Upamiętnienie Emanuela Sztokmana"
 date: "2024-09-24"
-excerpt: "Upamiętniliśmy Dąbrowszczaka Emanuela Sztokmana, poległego w szeregach Berlingowców podczas niesienia pomocy Powstaniu Warszawskiemu…"
+excerpt: "Upamiętniliśmy Dąbrowszczaka Emanuela Sztokmana, poległego w szeregach Berlingowców podczas niesienia pomocy Powstaniu Warszawskiemu. W dniach 17-22 września 1944 roku 2 Dywizja Piechoty im. Henryka Dąbrowskiego I Armii Wojska Polskiego forsowała Wisłę, by wspomóc Powstanie Warszawskie."
 image: "/aktualnosci/upamietnienie-emanuela-sztokmana.jpg"
 source: "https://www.ochotnicywolnosci.org/upamietnienie-emanuela-sztokmana/"
 ---

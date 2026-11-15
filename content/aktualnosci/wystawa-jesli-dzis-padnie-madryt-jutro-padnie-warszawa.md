@@ -1,7 +1,7 @@
 ---
 title: "WYSTAWA: Jeśli dziś padnie Madryt, jutro padnie Warszawa…"
 date: "2023-06-09"
-excerpt: "Wystawa „Jeśli dziś padnie Madryt, jutro padnie Warszawa. Polskie wątki w wojnie domowej w Hiszpanii (1936-1939)” przypomina udział ochotników i ochotniczek z Polski w obronie republikańskiej Hiszpanii oraz sztukę hiszpańskiego plakatu antyfaszystowskiego. Opiera się na…"
+excerpt: "Wystawa „Jeśli dziś padnie Madryt, jutro padnie Warszawa. Polskie wątki w wojnie domowej w Hiszpanii (1936-1939)” przypomina udział ochotników i ochotniczek z Polski w obronie republikańskiej Hiszpanii oraz sztukę hiszpańskiego plakatu antyfaszystowskiego."
 image: "/aktualnosci/wystawa-jesli-dzis-padnie-madryt-jutro-padnie-warszawa.jpg"
 source: "https://www.ochotnicywolnosci.org/wystawa-jesli-dzis-padnie-madryt-jutro-padnie-warszawa/"
 ---

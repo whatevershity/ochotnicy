@@ -1,7 +1,7 @@
 ---
 title: "Podsumowanie roku 2021"
 date: "2021-12-31"
-excerpt: "Mijający rok był dla naszego stowarzyszenia wyjątkowo intensywny, a to za sprawą przypadającej w nim 85. rocznicy wybuchu hiszpańskiej wojny domowej i powołania Brygad Międzynarodowych. Z tej właśnie okazji zorganizowaliśmy szereg działań, aby upamiętnić Dąbrowszczaków i…"
+excerpt: "Mijający rok był dla naszego stowarzyszenia wyjątkowo intensywny, a to za sprawą przypadającej w nim 85. rocznicy wybuchu hiszpańskiej wojny domowej i powołania Brygad Międzynarodowych."
 image: "/aktualnosci/podsumowanie-roku-2021.jpg"
 source: "https://www.ochotnicywolnosci.org/podsumowanie-roku-2021/"
 ---

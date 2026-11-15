@@ -1,7 +1,7 @@
 ---
 title: "Opór wobec „dekomunizacji” – punkt zwrotny w lewicowej polityce historycznej"
 date: "2021-02-10"
-excerpt: "Pod koniec maja Wojewódzki Sąd Administracyjny w Warszawie wydał orzeczenia przywracające „zdekomunizowanych” patronów warszawskich ulic. Jeśli wyroki się uprawomocnią, to już wkrótce na swoje miejsce powrócą nazwy takie, jak m.in. Dąbrowszczaków, Armii Ludowej, Związku Walki…"
+excerpt: "Pod koniec maja Wojewódzki Sąd Administracyjny w Warszawie wydał orzeczenia przywracające „zdekomunizowanych” patronów warszawskich ulic. Jeśli wyroki się uprawomocnią, to już wkrótce na swoje miejsce powrócą nazwy takie, jak m.in. Dąbrowszczaków, Armii Ludowej, Związku Walki Młodych czy Tołwińskiego."
 image: "/aktualnosci/opor-wobec-dekomunizacji-punkt-zwrotny-w-lewicowej-polityce-historycznej.jpg"
 source: "https://www.ochotnicywolnosci.org/opor-wobec-dekomunizacji-punkt-zwrotny-w-lewicowej-polityce-historycznej/"
 kind: "artykul"

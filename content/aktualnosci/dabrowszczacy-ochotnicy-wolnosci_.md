@@ -1,7 +1,7 @@
 ---
 title: "Dąbrowszczacy – ochotnicy wolności!"
 date: "2021-02-01"
-excerpt: "17 lipca 1936 roku, w Hiszpanii dochodzi do buntu faszystowskich generałów przeciwko rządom lewicy i ich postępowych reform społecznych. W obronie młodej republiki staje hiszpański lud i cała lewica. Nieudany przewrót zamienia się w wojnę domową. W odpowiedzi na kolejną…"
+excerpt: "17 lipca 1936 roku, w Hiszpanii dochodzi do buntu faszystowskich generałów przeciwko rządom lewicy i ich postępowych reform społecznych. W obronie młodej republiki staje hiszpański lud i cała lewica."
 image: "/aktualnosci/dabrowszczacy-ochotnicy-wolnosci_.jpg"
 source: "https://www.ochotnicywolnosci.org/dabrowszczacy-ochotnicy-wolnosci_/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Pamięci Dąbrowszczaków – 85. rocznica wybuchu wojny w Hiszpanii"
 date: "2021-06-21"
-excerpt: "W 85. rocznicę wybuchu hiszpańskiej wojny domowej upamiętnimy Dąbrowszczaków – antyfaszystki i antyfaszystów z Polski, którzy pod hasłem „za wolność Waszą i naszą”…"
+excerpt: "W 85. rocznicę wybuchu hiszpańskiej wojny domowej upamiętnimy Dąbrowszczaków – antyfaszystki i antyfaszystów z Polski, którzy pod hasłem „za wolność Waszą i naszą” walczyli w obronie II Republiki Hiszpańskiej i klasy pracującej, z przestrogą, że „jeśli dziś padnie Madryt, jutro padnie Warszawa”."
 image: "/aktualnosci/pamieci-dabrowszczakow-85-rocznica-wybuchu-wojny-w-hiszpanii.jpg"
 source: "https://www.ochotnicywolnosci.org/pamieci-dabrowszczakow-85-rocznica-wybuchu-wojny-w-hiszpanii/"
 ---

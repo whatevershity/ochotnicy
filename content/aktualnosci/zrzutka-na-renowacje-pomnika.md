@@ -1,7 +1,7 @@
 ---
 title: "Zrzutka na renowację pomnika"
 date: "2022-06-30"
-excerpt: "Jako Stowarzyszenie Ochotnicy Wolności chcemy przeprowadzić gruntowną renowację pomnika poświęconego Dąbrowszczakom na Cmentarzu Wojskowym na Powązkach w Warszawie. Monument znajdujący się w kwaterze polskich ochotników i ochotniczek Brygad Międzynarodowych został odsłonięty…"
+excerpt: "Jako Stowarzyszenie Ochotnicy Wolności chcemy przeprowadzić gruntowną renowację pomnika poświęconego Dąbrowszczakom na Cmentarzu Wojskowym na Powązkach w Warszawie."
 image: "/aktualnosci/zrzutka-na-renowacje-pomnika.jpg"
 source: "https://www.ochotnicywolnosci.org/zrzutka-na-renowacje-pomnika/"
 ---

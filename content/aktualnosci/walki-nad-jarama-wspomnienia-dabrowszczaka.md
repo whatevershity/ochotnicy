@@ -3,7 +3,7 @@ title: "Walki nad Jaramą. Wspomnienia Dąbrowszczaka"
 date: "2023-02-13"
 excerpt: "Wspomnienia Dąbrowszczaka Jana Bernarda dotyczące walk polskiego batalionu im. Jarosława Dąbrowskiego nad rzeką Jarama w lutym 1937 roku.
 
-“Było to 8 lutego 1937. Z rana przeprowadziliśmy manewry polowe za Argandą w obecności generała…”"
+„Było to 8 lutego 1937. Z rana przeprowadziliśmy manewry polowe za Argandą w obecności generała…”"
 image: "/aktualnosci/walki-nad-jarama-wspomnienia-dabrowszczaka.jpg"
 caption: "Dąbrowszczacy z pierwszej kompanii batalionu im. J. Dąbrowskiego na froncie Jarmy, luty 1937. Ze zbiorów Muzeum Niepodległości w Warszawie."
 source: "https://www.ochotnicywolnosci.org/walki-nad-jarama-wspomnienia-dabrowszczaka/"

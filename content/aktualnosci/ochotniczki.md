@@ -1,7 +1,7 @@
 ---
 title: "Ochotniczki"
 date: "2021-03-08"
-excerpt: "Z okazji Dnia Kobiet przypominamy o ochotniczkach, które walczyły w hiszpańskiej wojnie domowej m.in. w Brygadach Międzynarodowych. Lata Drugiej Republiki Hiszpańskiej to czas równouprawnienia kobiet i niezwykłego zaangażowania organizacji kobiecych w walkę o równość i…"
+excerpt: "Z okazji Dnia Kobiet przypominamy o ochotniczkach, które walczyły w hiszpańskiej wojnie domowej m.in. w Brygadach Międzynarodowych. Lata Drugiej Republiki Hiszpańskiej to czas równouprawnienia kobiet i niezwykłego zaangażowania organizacji kobiecych w walkę o równość i upodmiotowienie."
 image: "/aktualnosci/ochotniczki.jpg"
 source: "https://www.ochotnicywolnosci.org/ochotniczki/"
 ---

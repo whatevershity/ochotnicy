@@ -1,7 +1,7 @@
 ---
 title: "Stanowisko wobec agresji Rosji na Ukrainę"
 date: "2022-03-07"
-excerpt: "Jako stowarzyszenie zajmujące się pamięcią o osobach z Polski, które walczyły w hiszpańskiej wojnie domowej pod hasłem „za wolność Waszą i naszą” pragniemy podkreślić naszą solidarność z ukraińskim społeczeństwem napadniętym przez rosyjski imperializm. Militarny zamach na…"
+excerpt: "Jako stowarzyszenie zajmujące się pamięcią o osobach z Polski, które walczyły w hiszpańskiej wojnie domowej pod hasłem „za wolność Waszą i naszą” pragniemy podkreślić naszą solidarność z ukraińskim społeczeństwem napadniętym przez rosyjski imperializm."
 image: "/aktualnosci/stanowisko-wobec-agresji-rosji-na-ukraine.jpg"
 source: "https://www.ochotnicywolnosci.org/stanowisko-wobec-agresji-rosji-na-ukraine/"
 ---

@@ -1,12 +1,12 @@
 ---
-title: "“Hiszpania w okopach. Wojna domowa w kolorze”"
+title: "„Hiszpania w okopach. Wojna domowa w kolorze”"
 date: "2022-07-08"
-excerpt: "Projekcja filmu “Hiszpania w okopach. Wojna domowa w kolorze” w ramach wydarzeń “Pamięci Dąbrowszczaków – 86. rocznica wybuchu wojny w Hiszpanii” odbędzie się 16 lipca w Kino Muranów o 18:00."
+excerpt: "Projekcja filmu „Hiszpania w okopach."
 image: "/aktualnosci/hiszpania-w-okopach-wojna-domowa-w-kolorze.jpg"
 source: "https://www.ochotnicywolnosci.org/hiszpania-w-okopach-wojna-domowa-w-kolorze/"
 ---
 
-Projekcja filmu “Hiszpania w okopach. Wojna domowa w kolorze” w ramach wydarzeń “Pamięci Dąbrowszczaków – 86. rocznica wybuchu wojny w Hiszpanii” odbędzie się 16 lipca w Kino Muranów o 18:00.
+Projekcja filmu „Hiszpania w okopach. Wojna domowa w kolorze” w ramach wydarzeń „Pamięci Dąbrowszczaków – 86. rocznica wybuchu wojny w Hiszpanii” odbędzie się 16 lipca w Kino Muranów o 18:00.
 
 Kliknij, by kupić bilety
 

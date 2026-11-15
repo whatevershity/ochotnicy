@@ -1,13 +1,13 @@
 ---
 title: "Oświadczenie w sprawie obchodów 84. rocznicy wybuchu hiszpańskiej wojny domowej"
 date: "2020-06-25"
-excerpt: "Od sześciu lat (od 2017 jako Stowarzyszenie Ochotnicy Wolności, wcześniej jako nieformalna inicjatywa “Łapy precz od ul. Dąbrowszczaków”) działamy na rzecz przywracania pamięci o polskich ochotnikach i ochotniczkach walczących przeciwko faszyzmowi podczas wojny domowej w…"
+excerpt: "Od sześciu lat (od 2017 jako Stowarzyszenie Ochotnicy Wolności, wcześniej jako nieformalna inicjatywa „Łapy precz od ul. Dąbrowszczaków”) działamy na rzecz przywracania pamięci o polskich ochotnikach i ochotniczkach walczących przeciwko faszyzmowi podczas wojny domowej w Hiszpanii (1936-1939)."
 image: "/aktualnosci/oswiadczenie-w-sprawie-obchodow-84-rocznicy-wybuchu-hiszpanskiej-wojny-domowej.png"
 source: "https://www.ochotnicywolnosci.org/oswiadczenie-w-sprawie-obchodow-84-rocznicy-wybuchu-hiszpanskiej-wojny-domowej/"
 ---
 
 Od sześciu lat (od 2017 jako Stowarzyszenie Ochotnicy Wolności,
-wcześniej jako nieformalna inicjatywa “Łapy precz od ul.
+wcześniej jako nieformalna inicjatywa „Łapy precz od ul.
 Dąbrowszczaków”) działamy na rzecz przywracania pamięci o polskich
 ochotnikach i ochotniczkach walczących przeciwko faszyzmowi podczas
 wojny domowej w Hiszpanii (1936-1939). Jednym z podejmowanych przez nas

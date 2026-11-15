@@ -1,7 +1,7 @@
 ---
 title: "Adela Korn"
 date: "2021-03-08"
-excerpt: "Adela Korn urodziła się w 1909 roku w Krakowie, z zawodu była krawcową. Pod koniec lat 20. w poszukiwaniu pracy wyjechała do Belgii, gdzie następnie działała w związku zawodowym modniarek oraz w lewicowych organizacjach. Przed wyjazdem do Hiszpanii w marcu 1937 roku wstąpiła…"
+excerpt: "Adela Korn urodziła się w 1909 roku w Krakowie, z zawodu była krawcową. Pod koniec lat 20. w poszukiwaniu pracy wyjechała do Belgii, gdzie następnie działała w związku zawodowym modniarek oraz w lewicowych organizacjach."
 image: "/aktualnosci/adela-korn.jpg"
 source: "https://www.ochotnicywolnosci.org/adela-korn/"
 kind: "historia"

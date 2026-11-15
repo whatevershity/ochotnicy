@@ -1,7 +1,7 @@
 ---
 title: "Otwieramy archiwalny zbiór Dąbrowszczaków!"
 date: "2020-01-20"
-excerpt: "W najnowszym numerze kwartalnika Ośrodek KARTA możecie znaleźć informację o podjętej współpracy między naszym stowarzyszeniem a archiwum Karty, dzięki któremu ustanowiliśmy zbiór poświęcony Dąbrowszczakom. Jeśli wśród waszych krewnych mieliście ochotnika lub ochotniczkę…"
+excerpt: "W najnowszym numerze kwartalnika Ośrodek KARTA możecie znaleźć informację o podjętej współpracy między naszym stowarzyszeniem a archiwum Karty, dzięki któremu ustanowiliśmy zbiór poświęcony Dąbrowszczakom."
 image: "/aktualnosci/otwieramy-archiwalny-zbior-dabrowszczakow.jpg"
 source: "https://www.ochotnicywolnosci.org/otwieramy-archiwalny-zbior-dabrowszczakow/"
 ---

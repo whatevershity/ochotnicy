@@ -1,7 +1,7 @@
 ---
 title: "Krwawe walki kompanii Botwina pod wzgórzem Sierra Quemada"
 date: "2021-02-17"
-excerpt: "16 lutego 1938 roku Dąbrowszczacy skierowani na front Estremadurski otrzymali zadanie zdobycia frankistowskich pozycji na wzgórzach Sierra Quemada pod miejscowością Peraleda del Zaucejo. Bitwa była jednocześnie chrztem bojowym dla nowopowstałej w ramach Batalionu Palafoxa…"
+excerpt: "16 lutego 1938 roku Dąbrowszczacy skierowani na front Estremadurski otrzymali zadanie zdobycia frankistowskich pozycji na wzgórzach Sierra Quemada pod miejscowością Peraleda del Zaucejo."
 image: "/aktualnosci/krwawe-walka-pod-wzgorzem-sierra-quemada.jpg"
 caption: "Żołnierze kompanii im. N. Botwina przed bitwą pod Sierra Quemada"
 source: "https://www.ochotnicywolnosci.org/krwawe-walka-pod-wzgorzem-sierra-quemada/"

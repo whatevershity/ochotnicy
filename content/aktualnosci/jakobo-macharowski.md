@@ -1,7 +1,7 @@
 ---
 title: "Jakobo Macharowski"
 date: "2021-08-30"
-excerpt: "Jakobo Macharowski – polsko-żydowski porucznik anarchosyndykalistycznej brygady. Macharowski urodził się w 1903 roku w Łodzi. Jeszcze jako dziecko wyemigrował z rodzicami do Francji. Na początku lat 30. zamieszkał w Barcelonie, gdzie otworzył własny warsztat naprawy maszyn do…"
+excerpt: "Jakobo Macharowski – polsko-żydowski porucznik anarchosyndykalistycznej brygady. Macharowski urodził się w 1903 roku w Łodzi. Jeszcze jako dziecko wyemigrował z rodzicami do Francji."
 image: "/aktualnosci/jakobo-macharowski.jpg"
 caption: "Jakobo Macharowski, 1966 rok"
 source: "https://www.ochotnicywolnosci.org/jakobo-macharowski/"

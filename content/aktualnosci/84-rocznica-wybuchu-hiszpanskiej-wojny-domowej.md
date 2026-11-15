@@ -1,7 +1,7 @@
 ---
 title: "84. rocznica wybuchu hiszpańskiej wojny domowej"
 date: "2020-07-21"
-excerpt: "18 lipca przedstawiciele stowarzyszenia Ochotnicy Wolności złożyli kwiaty przy kwaterze Dąbrowszczaków na Powązkach Wojskowych, symbolicznie upamiętniając polskich antyfaszystów i antyfaszystki, którzy wzięli udział w hiszpańskiej wojnie domowej, stając w obronie Republiki…"
+excerpt: "18 lipca przedstawiciele stowarzyszenia Ochotnicy Wolności złożyli kwiaty przy kwaterze Dąbrowszczaków na Powązkach Wojskowych, symbolicznie upamiętniając polskich antyfaszystów i antyfaszystki, którzy wzięli udział w hiszpańskiej wojnie domowej, stając w obronie Republiki Hiszpańskiej pod hasłem „za wolność Waszą i naszą”, z przestrogą, że „jeśli dziś panie Madryt, jutro padnie Warszawa”."
 image: "/aktualnosci/84-rocznica-wybuchu-hiszpanskiej-wojny-domowej.png"
 source: "https://www.ochotnicywolnosci.org/84-rocznica-wybuchu-hiszpanskiej-wojny-domowej/"
 ---

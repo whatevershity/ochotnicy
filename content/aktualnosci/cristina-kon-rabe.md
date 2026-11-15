@@ -1,7 +1,7 @@
 ---
 title: "Cristina Kon-Rabe"
 date: "2021-08-30"
-excerpt: "Cristina Kon-Rabe urodziła się w Warszawie w 1911 roku. Związała się z hiszpańskim działaczem anarchistycznym Mateo Baruta Vilà, sekretarzem Federiki Montesny – ikoną hiszpańskiego anarchizmu i feminizmu, pierwszą kobietą na stanowisku ministra w Hiszpanii, które zajęła w…"
+excerpt: "Cristina Kon-Rabe urodziła się w Warszawie w 1911 roku. Związała się z hiszpańskim działaczem anarchistycznym Mateo Baruta Vilà, sekretarzem Federiki Montesny – ikoną hiszpańskiego anarchizmu i feminizmu, pierwszą kobietą na stanowisku ministra w Hiszpanii, które zajęła w trakcie wojny."
 image: "/aktualnosci/cristina-kon-rabe.jpg"
 source: "https://www.ochotnicywolnosci.org/cristina-kon-rabe/"
 kind: "historia"

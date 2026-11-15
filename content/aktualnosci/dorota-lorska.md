@@ -1,7 +1,7 @@
 ---
 title: "Dorota Lorska"
 date: "2021-03-08"
-excerpt: "Dorota Lorska (z d. Goldszajder) urodziła się w 1913 roku w Kielcach. W 1930 roku wyjechała na studia do Pragi, gdzie ukończyła wydział lekarski na Uniwersytecie Karola. Od wczesnych lat młodości przejawiała zainteresowanie walką ruchu robotniczego, pozostawała jednak…"
+excerpt: "Dorota Lorska (z d. Goldszajder) urodziła się w 1913 roku w Kielcach. W 1930 roku wyjechała na studia do Pragi, gdzie ukończyła wydział lekarski na Uniwersytecie Karola."
 image: "/aktualnosci/dorota-lorska.jpg"
 source: "https://www.ochotnicywolnosci.org/dorota-lorska/"
 kind: "historia"

@@ -1,7 +1,7 @@
 ---
 title: "86. rocznica wybuchu wojny domowej w Hiszpanii"
 date: "2022-07-18"
-excerpt: "W 86. rocznicę wybuchu wojny domowej w Hiszpanii wywołanej poprzez próbę wojskowo-prawicowego puczu przeciwko II Republice Hiszpańskiej i lewicowym rządom Frontu Ludowego Stowarzyszenie Ochotnicy Wolności zorganizowało wydarzenia upamiętniające antyfaszystki i antyfaszystów z…"
+excerpt: "W 86. rocznicę wybuchu wojny domowej w Hiszpanii wywołanej poprzez próbę wojskowo-prawicowego puczu przeciwko II Republice Hiszpańskiej i lewicowym rządom Frontu Ludowego Stowarzyszenie Ochotnicy Wolności zorganizowało wydarzenia upamiętniające antyfaszystki i antyfaszystów z Polski, którzy z tysiącami ochotników i ochotniczek z całego świata stanęli w obronie demokracji, socjalnych przemian i emancypacji klasy pracującej za Pirenejami."
 image: "/aktualnosci/86-rocznica-wybuchu-wojny-domowej-w-hiszpanii.jpg"
 source: "https://www.ochotnicywolnosci.org/86-rocznica-wybuchu-wojny-domowej-w-hiszpanii/"
 ---

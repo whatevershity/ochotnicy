@@ -1,7 +1,7 @@
 ---
 title: "Klip „Pamiętamy o Dąbrowszczakach!”"
 date: "2021-07-29"
-excerpt: "Pamięć o Dąbrowszczakach jest wciąż żywa! Mówi o tym kilkanaście osób w specjalnym klipie, który stworzyliśmy w 85. rocznicę wybuchu hiszpańskiej wojny domowej. Działacze związkowi i lewicowcowi, dziennikarze, posłowie, radne pokazują, że wartości polskich antyfaszystów i antyfaszystek walczących w Hiszpanii pod hasłem „za wolność Waszą i naszą” są nadal aktualne."
+excerpt: "Pamięć o Dąbrowszczakach jest wciąż żywa! Mówi o tym kilkanaście osób w specjalnym klipie, który stworzyliśmy w 85. rocznicę wybuchu hiszpańskiej wojny domowej."
 image: "/aktualnosci/klip-pamietamy-o-dabrowszczakach.png"
 source: "https://www.ochotnicywolnosci.org/klip-pamietamy-o-dabrowszczakach/"
 ---
