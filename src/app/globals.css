@@ -1170,23 +1170,22 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
   .manifest {
     height: auto;
     min-height: 100svh;
-    place-items: center stretch;
-    /* więcej od góry pod menu + logo */
-    padding-block: clamp(5.25rem, 14vw, 6.5rem) clamp(2.75rem, 8vw, 4rem);
+    place-items: start stretch;
+    /* całość wyżej — tylko luz pod menu */
+    padding-block: clamp(3.5rem, 9vw, 4.25rem) clamp(2.75rem, 8vw, 4rem);
   }
 
   .manifest__grid {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: left;
     max-width: none;
     width: 100%;
     gap: 0;
     padding-inline: var(--ow-page-x);
-    /* mniej w górę — logo nie wychodzi spod menu */
-    transform: translateY(-10px);
+    transform: none;
   }
 
   .manifest__grid::before {
@@ -1215,8 +1214,7 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
     width: auto;
     max-width: 100%;
     min-height: 0;
-    /* logo niżej — nie wystaje od góry pod menu */
-    padding-top: 3.25rem;
+    padding-top: 0.35rem;
     margin: 0;
     overflow: visible;
     clip-path: none !important;
@@ -1232,11 +1230,10 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
     position: relative;
     left: auto;
     top: auto;
-    /* tylko logo niżej — transform nie rusza tytułu / leadu */
-    transform: translateY(1.15rem);
+    transform: none;
     width: clamp(5.75rem, 24vw, 7.25rem);
     height: clamp(5.75rem, 24vw, 7.25rem);
-    margin: 0 0 2.35rem;
+    margin: 0 0 1.85rem;
     opacity: 0.95;
   }
 
