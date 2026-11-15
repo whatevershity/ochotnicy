@@ -1290,8 +1290,8 @@ body:has(.manifest.is-ready.manifest--anim) .site-menu {
     justify-self: start;
     margin: 2.65rem 0 0;
     max-width: 26rem;
-    font-size: clamp(1.2rem, 4.8vw, 1.35rem);
-    line-height: 1.58;
+    font-size: clamp(0.95rem, 3.6vw, 1.08rem);
+    line-height: 1.55;
     text-align: left;
     padding-inline: 0;
     color: #1a1a1a;
